@@ -1,41 +1,37 @@
 {% include base_path %}
 
-{% if post.header.teaser %}
-  {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
-{% else %}
-  {% assign teaser = site.teaser %}
-{% endif %}
-
-{% assign title = post.title %}
-
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-
+    <td>
+      <img class="thumbnail" src="{{post.teaser | prepend: "/images/" | prepend: base_path }}">
+    </td>
+    <td>
         {% if post.collection == 'teaching' %}
           <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif post.collection == 'publications' %}
           <p>
-            {{post.title}}
+            {{post.title}}<br>
             {{ post.venue }} {{ post.date | default: "1900-01-01" | date: "%Y" }}, {{post.city}} {{post.state}}<br>
             {{post.authors}}<br>
             [ <a href="{{post.paperurl}}" rel="permalink">PDF</a> ]
             [ <a href="{{post.bibtex}}" rel="permalink">BibTex</a> ]
           </p>
         {% endif %}
+      </td>
   </article>
 </div>
 
-<a href="javascript:toggleBibtex('Maninis2017')">[BibTeX]</a>
-<a href="http://arxiv.org/abs/1701.04658" target="_blank">[PDF]</a> <a href="http://www.vision.ee.ethz.ch/~cvlsegmentation/cob/"  target="_blank">[Project Page]</a>
-</p>
-<div id="bib_Maninis2017" class="bibtex noshow">
-<pre>
-@article{Maninis2017,
-  author = {Maninis, Kevis-Kokitsi and Pont-Tuset, Jordi and Arbel&aacute;ez, Pablo and Van Gool, Luc},
-  title = {Convolutional Oriented Boundaries: From Image Segmentation to High-Level Tasks},
-  journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)},
-  year = {2017}
-}
-</pre>
-</div>
-</li>
+{% comment %} <a href="javascript:toggleBibtex('Maninis2017')">[BibTeX]</a> {% endcomment %}
+{% comment %} <a href="http://arxiv.org/abs/1701.04658" target="_blank">[PDF]</a> <a href="http://www.vision.ee.ethz.ch/~cvlsegmentation/cob/"  target="_blank">[Project Page]</a> {% endcomment %}
+{% comment %} </p> {% endcomment %}
+{% comment %} <div id="bib_Maninis2017" class="bibtex noshow"> {% endcomment %}
+{% comment %} <pre> {% endcomment %}
+{% comment %} @article{Maninis2017, {% endcomment %}
+{% comment %}   author = {Maninis, Kevis-Kokitsi and Pont-Tuset, Jordi and Arbel&aacute;ez, Pablo and Van Gool, Luc}, {% endcomment %}
+{% comment %}   title = {Convolutional Oriented Boundaries: From Image Segmentation to High-Level Tasks}, {% endcomment %}
+{% comment %}   journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)}, {% endcomment %}
+{% comment %}   year = {2017} {% endcomment %}
+{% comment %} } {% endcomment %}
+{% comment %} </pre> {% endcomment %}
+{% comment %} </div> {% endcomment %}
+{% comment %} </li> {% endcomment %}
