@@ -78,10 +78,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Federico Perazzi"
+  name             :
   avatar           : "profile.png"
-  bio              : "Postdoctoral Researcher"
-  googlescholar    : "http://yourfullgooglescholarurl.com"
+  bio              :
+  googlescholar    : "https://scholar.google.ch/citations?user=z-oSdPoAAAAJ&hl=en"
   location         : "Zurich, CH"
   employer         : "Disney Research"
   email            : "federico@disneyresearch"

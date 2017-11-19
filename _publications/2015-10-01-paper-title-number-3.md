@@ -1,5 +1,5 @@
 ---
-title: 'Bilateral Space Video Segmentation'
+title: "Bilateral Space Video Segmentation"
 collection: publications
 permalink: /publication/2015-10-01-paper-title-number-3
 date: 2015-10-01
