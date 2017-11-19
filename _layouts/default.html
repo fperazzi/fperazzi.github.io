@@ -1,32 +1,16 @@
 ---
 layout: compress
 ---
-
 {% include base_path %}
-
 <!doctype html>
 <html lang="{{ site.locale | slice: 0,2 }}" class="no-js">
   <head>
     {% include head.html %}
     {% include head/custom.html %}
   </head>
-
   <body>
-
     {% include browser-upgrade.html %}
-
     {{ content }}
-
-    </script>
-
-    {% comment %} <div class="page__footer"> {% endcomment %}
-    {% comment %}   <footer> {% endcomment %}
-    {% comment %}     {% include footer/custom.html %} {% endcomment %}
-    {% comment %}     {% include footer.html %} {% endcomment %}
-    {% comment %}   </footer> {% endcomment %}
-    {% comment %} </div> {% endcomment %}
-
     {% include scripts.html %}
-
   </body>
 </html>

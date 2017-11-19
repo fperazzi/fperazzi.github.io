@@ -15,7 +15,7 @@
           <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif post.collection == 'publications' %}
           <p>
-            {{post.title}} <br>
+            {{post.title}}
             {{ post.venue }} {{ post.date | default: "1900-01-01" | date: "%Y" }}, {{post.city}} {{post.state}}<br>
             {{post.authors}}<br>
             [ <a href="{{post.paperurl}}" rel="permalink">PDF</a> ]
@@ -24,3 +24,18 @@
         {% endif %}
   </article>
 </div>
+
+<a href="javascript:toggleBibtex('Maninis2017')">[BibTeX]</a>
+<a href="http://arxiv.org/abs/1701.04658" target="_blank">[PDF]</a> <a href="http://www.vision.ee.ethz.ch/~cvlsegmentation/cob/"  target="_blank">[Project Page]</a>
+</p>
+<div id="bib_Maninis2017" class="bibtex noshow">
+<pre>
+@article{Maninis2017,
+  author = {Maninis, Kevis-Kokitsi and Pont-Tuset, Jordi and Arbel&aacute;ez, Pablo and Van Gool, Luc},
+  title = {Convolutional Oriented Boundaries: From Image Segmentation to High-Level Tasks},
+  journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)},
+  year = {2017}
+}
+</pre>
+</div>
+</li>
