@@ -24,3 +24,6 @@ group :jekyll_plugins do
   gem "jekyll-feed"
   gem 'jekyll-sitemap'
 end
+
+gem 'json', github: 'flori/json', branch: 'v1.8'
+
