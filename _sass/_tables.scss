@@ -36,3 +36,10 @@ td {
 tr, td, th {
   vertical-align: middle;
 }
+
+td.test {
+  padding: 0.5em;
+  border-bottom: 10px solid $light-gray;
+  border-right: 10px solid $light-gray;
+  background-color: $coral;
+}

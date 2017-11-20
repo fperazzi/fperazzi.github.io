@@ -26,4 +26,5 @@ group :jekyll_plugins do
 end
 
 gem 'json', github: 'flori/json', branch: 'v1.8'
-
+gem 'execjs'
+gem 'therubyracer', :platforms => :ruby
