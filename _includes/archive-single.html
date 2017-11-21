@@ -8,7 +8,7 @@
         {% elsif post.collection == 'publications' or post.collection == 'workshops' %}
 
             <td>
-              <img class="table_entry" src="{{post.thumbnail | prepend: "/files/thumbnails/" }}">
+              <a href="{{post.paperurl | prepend: "/files/papers/" }}"><img class="table_entry" src="{{post.thumbnail | prepend: "/files/thumbnails/" }}"></a>
             </td>
 
             <td>
