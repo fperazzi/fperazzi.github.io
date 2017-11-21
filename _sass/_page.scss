@@ -36,6 +36,8 @@
 }
 
 .page__title {
+  border-bottom: 1px solid $border-color;
+  padding-bottom: 0.2em;
   margin-top: 0;
   line-height: 1;
 
@@ -52,8 +54,9 @@
 .page__content {
 
   h2 {
-    padding-bottom: 0.5em;
+    padding-bottom: 0.2em;
     border-bottom: 1px solid $border-color;
+    font-size: $type-size-3;
   }
 
   p, li, dl {

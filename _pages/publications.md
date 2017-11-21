@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Federico Perazzi"
+title: Research
 redirect_from:
   - /publications/
   - /publications.html
@@ -13,7 +13,7 @@ author_profile: true
 
 {% include base_path %}
 
-I am a Post-Doctoral Researcher at [Disney Research Zurich](http://www.disneyresearch.com/">Disney), in the _Imaging and Video Processing Group_ lead by [Dr. Alexander Sorkine-Hornung](http://www.disneyresearch.com/people/alexander-hornung) My research interests span Computer Vision and Machine Learning.
+I am a Post-Doctoral Researcher at [Disney Research Zurich](http://www.disneyresearch.com), in the _Imaging and Video Processing Group_ lead by [Dr. Alexander Sorkine-Hornung](http://www.disneyresearch.com/people/alexander-hornung) My research interests span Computer Vision and Machine Learning.
 
 ## Publications
 <table>
