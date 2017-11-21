@@ -8,7 +8,7 @@
         {% elsif post.collection == 'publications' or post.collection == 'workshops' %}
 
             <td>
-              <img class="table_entry" src="{{post.teaser | prepend: "/images/" | prepend: base_path }}">
+              <img class="table_entry" src="{{post.thumbnail | prepend: "/files/thumbnails/" }}">
             </td>
 
             <td>
@@ -17,10 +17,10 @@
               <div class='conf_authors'>{{post.authors}}</div><br>
 
               <div class='conf_venue'>{{ post.venue }}
-                {{ post.date | default: "1900-01-01" | date: "%Y" }}, {{post.city}} {{post.state}}</div><br>
+                {{ post.date | default: "1900-01-01" | date: "%Y" }}, {{post.city}}, {{post.state}}</div><br>
 
               {% if post.paperurl %}
-                <a class="button pdf" href="{{post.paperurl}}" rel="permalink">Pdf</a>
+                <a class="button pdf" href="{{post.paperurl | prepend: "/files/papers/"}}" rel="permalink">Pdf</a>
               {% endif %}
 
               {% if post.arxiv %}
@@ -28,7 +28,7 @@
               {% endif %}
 
               {% if post.bibtex %}
-                <a class="button bibtex" href="{{post.bibtex}}" rel="permalink">BibTex</a>
+                <a class="button bibtex" href="{{post.bibtex | prepend: "/files/bibtex/"}}" rel="permalink">BibTex</a>
               {% endif %}
 
               {% if post.project %}

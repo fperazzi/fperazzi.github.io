@@ -1,24 +1,18 @@
 ---
-title: "Bilateral Space Video Segmentation"
+title: "Learning Video Object Segmentation From Static Images"
 collection: publications
-permalink: /publication/2015-10-01-paper-title-number-3
-date: 2015-10-01
-venue: 'CVPR'
-city: 'Las Vegas'
-state: 'NV'
-teaser: 'profile.png'
-thumbnail : bio-photo.jpg
-authors: F. Perazzi, A. Hornung, O. Wang
-bibtex: http://academicpages.github.io/files/paper3.pdf
-paperurl: http://academicpages.github.io/files/paper3.pdf
-arxiv: http://academicpages.github.io/files/paper3.pdf
-project: http://academicpages.github.io/files/paper3.pdf
-source: http://academicpages.github.io/files/paper3.pdf
-data: http://academicpages.github.io/files/paper3.pdf
-citation: 'Your Name, You. (2015). &quot;Paper Title Number 3.&quot; <i>Journal 1</i>. 1(3).'
+permalink: /publication/masktrack
+date: 2017-08-20
+venue: "CVPR"
+city: "Honolulu"
+state: "HI"
+thumbnail: "masktrack.png"
+teaser : masktrack.jpg
+authors: "F. Perazzi*, A. Khoreva*, R. Benenson, B. Schiele, A. Sorkine-Hornung"
+bibtex: masktrack.txt
+paperurl: masktrack.pdf
+arxiv: https://arxiv.org/abs/1612.02646v1
+project: http://graphics.ethz.ch/~perazzif/masktrack/index.html
+source:
+data:
 ---
-This paper is about the number 3. The number 4 is left for future work.
-
-[Download paper here](http://academicpages.github.io/files/paper3.pdf)
-
-Recommended citation: Your Name, You. (2015). "Paper Title Number 3." <i>Journal 1</i>. 1(3).

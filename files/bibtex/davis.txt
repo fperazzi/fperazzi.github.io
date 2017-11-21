@@ -1,0 +1,6 @@
+@inproceedings{Perazzi2016,
+  author = {F. Perazzi and J. Pont-Tuset and B. McWilliams and L. Van Gool and M. Gross and A. Sorkine-Hornung},
+  title = {A Benchmark Dataset and Evaluation Methodology for Video Object Segmentation},
+  booktitle = {Computer Vision and Pattern Recognition},
+  year = {2016}
+}

@@ -3,6 +3,15 @@
    ========================================================================== */
 img.table_entry {
   width: 100px;
+  height: 100px;
+  // border: 1px solid $light-gray;
+  box-sizing: border-box;
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // background-position: 50% 50%;
+  margin: auto;
+  object-fit: scale-down;
+
 }
 
 div.conf_title {
