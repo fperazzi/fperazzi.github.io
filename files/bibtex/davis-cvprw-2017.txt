@@ -1,0 +1,11 @@
+@article{Pont-Tuset_arXiv_2017,
+  author  = {Jordi Pont-Tuset and
+             Federico Perazzi and
+             Sergi Caelles and
+             Pablo Arbel\'aez and
+             Alexander Sorkine-Hornung and
+             Luc {Van Gool}},
+  title   = {The 2017 DAVIS Challenge on Video Object Segmentation},
+  journal = {arXiv:1704.00675},
+  year    = {2017}
+}

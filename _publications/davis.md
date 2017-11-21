@@ -13,6 +13,6 @@ bibtex: davis.txt
 paperurl: davis.pdf
 arxiv:
 project: http://davischallenge.org
-source: https://github.com/fperazzi/davis-2017
+source: https://github.com/fperazzi/davis
 data:
 ---
