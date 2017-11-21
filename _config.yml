@@ -78,9 +78,9 @@ analytics:
 
 # Site Author
 author:
-  name             :
+  name             : "Federico Perazzi"
   avatar           : "profile.jpg"
-  bio              :
+  bio              : "Postdoctoral Researcher"
   googlescholar    : "https://scholar.google.ch/citations?user=z-oSdPoAAAAJ&hl=en"
   location         : "Zurich, CH"
   employer         : "Disney Research"

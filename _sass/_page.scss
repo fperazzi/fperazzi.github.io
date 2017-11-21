@@ -10,17 +10,18 @@
   padding-right: 1em;
   animation: intro 0.3s both;
   animation-delay: 0.35s;
+  max-width: 1024px;
 
-  @include breakpoint($x-large) {
-    max-width: $x-large;
-  }
+//   @include breakpoint($x-large) {
+//     max-width: 1024px;
+//   }
 }
 
 .page {
   @include breakpoint($large) {
     @include span(10 of 12 last);
     @include prefix(0.5 of 12);
-    @include suffix(2 of 12);
+    // @include suffix(2 of 12);
   }
 
   .page__inner-wrap {
@@ -398,4 +399,10 @@
   margin-bottom: 10px;
   font-size: $type-size-6;
   text-transform: uppercase;
+}
+.page__custom {
+  width: 85.05085%;
+  float: right;
+  padding-left: 2.237%;
+  padding-right: 4.5%;
 }
