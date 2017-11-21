@@ -1,0 +1,103 @@
+/* ==========================================================================
+   CUSTOMS
+   ========================================================================== */
+img.table_entry {
+  width: 100px;
+}
+
+div.conf_title {
+  font-weight: bold;
+  display:inline;
+  font-size: $type-size-5;
+}
+
+div.conf_venue {
+}
+
+div.conf_authors {
+  font-style: italic;
+}
+
+div.conf_authors, div.conf_venue {
+  display:inline;
+  font-size: $type-size-c;
+}
+
+
+a.button {
+    //background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 1px 1px;
+    padding: 2px 6px;
+    cursor: pointer;
+    font-size: $type-size-c;
+    font-family: $global-font-family;
+    border-radius: 4px;
+    // background-color: white;
+    background-color: #F0F0F0;
+    color: $info-color;
+    -webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2s;
+}
+.button:hover {
+    background-color: #4CAF50; /* Green */
+    text-decoration: none;
+    color: white;
+}
+
+// a.bibtex {
+//   border: 2px solid #4CAF50; /* Green */
+// }
+
+a.bibtex:hover {
+  text-decoration: none;
+  background-color: #4CAF50; /* Green */
+}
+
+// a.pdf {
+//   border: 2px solid $info-color; /* Link */
+// }
+
+a.pdf:hover {
+  background-color: $info-color; /* Link */
+  text-decoration: none;
+}
+
+// a.project {
+//   border: 2px solid #ffcc33; /* Orange */
+// }
+
+a.project:hover {
+  text-decoration: none;
+  background-color: #ffcc33; /* Orange */
+}
+
+// a.arxiv {
+//   border: 2px solid #f44336; /* Red */
+// }
+
+a.arxiv:hover {
+  text-decoration: none;
+  background-color: #f44336; /* Red */
+}
+// a.source {
+//   border: 2px solid #9932CC; /* Purple */
+// }
+
+a.source:hover {
+  text-decoration: none;
+  background-color: #9932CC;
+}
+
+// a.data {
+//   border: 2px solid #4CAF50; /* Green */
+// }
+
+a.data:hover {
+  text-decoration: none;
+  background-color: #4CAF50; /* Green */
+}

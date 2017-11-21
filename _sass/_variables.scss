@@ -38,6 +38,7 @@ $type-size-2                : 1.953em;  // ~31.248px
 $type-size-3                : 1.563em;  // ~25.008px
 $type-size-4                : 1.25em;   // ~20px
 $type-size-5                : 1em;      // ~16px
+$type-size-c                : 0.9em;    // ~14px
 $type-size-6                : 0.75em;   // ~12px
 $type-size-7                : 0.6875em; // ~11px
 $type-size-8                : 0.625em;  // ~10px
@@ -89,13 +90,15 @@ $youtube-color              : #bb0000;
 $xing-color                 : #006567;
 
 
+
 /* links */
+//$link-color                 : #0000EE;
 $link-color                 : $info-color;
 $link-color-hover           : mix(#000, $link-color, 25%);
+//$link-color-visited         : #551A8B;
 $link-color-visited         : mix(#fff, $link-color, 25%);
 $masthead-link-color        : $primary-color;
 $masthead-link-color-hover  : mix(#000, $primary-color, 25%);
-
 
 /*
    Breakpoints

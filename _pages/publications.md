@@ -18,17 +18,27 @@ I am a Post-Doctoral Researcher at [Disney Research Zurich](http://www.disneyres
 ## Publications
 <table>
 {% for post in site.publications reversed %}
-  <tr>
-  {% include archive-single.html %}
-  </tr>
+  <tr>{% include archive-single.html %}</tr>
 {% endfor %}
 </table>
 
 ## Workshops
-{% for post in site.Workshops reversed %}
-  {% include archive-single.html %}
+<table>
+{% for post in site.workshops reversed %}
+  <tr>{% include archive-single.html %}</tr>
 {% endfor %}
+</table>
 
 ## Patents
+<table>
+{% for post in site.patents reversed %}
+  <tr>{% include archive-single.html %}</tr>
+{% endfor %}
+</table>
 
 ## Teaching
+<table>
+{% for post in site.teaching reversed %}
+  <tr>{% include archive-single.html %}</tr>
+{% endfor %}
+</table>

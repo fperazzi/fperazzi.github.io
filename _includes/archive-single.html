@@ -2,36 +2,45 @@
 
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    <td>
-      <img class="thumbnail" src="{{post.teaser | prepend: "/images/" | prepend: base_path }}">
-    </td>
-    <td class='test'>
         {% if post.collection == 'teaching' %}
           <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
-        {% elsif post.collection == 'publications' %}
-          <p>
-            {{post.title}}<br>
-            {{ post.venue }} {{ post.date | default: "1900-01-01" | date: "%Y" }}, {{post.city}} {{post.state}}<br>
-            {{post.authors}}<br>
-            [ <a href="{{post.paperurl}}" rel="permalink">PDF</a> ]
-            [ <a href="{{post.bibtex}}" rel="permalink">BibTex</a> ]
-          </p>
+
+        {% elsif post.collection == 'publications' or post.collection == 'workshops' %}
+
+            <td>
+              <img class="table_entry" src="{{post.teaser | prepend: "/images/" | prepend: base_path }}">
+            </td>
+
+            <td>
+              <div class='conf_title'>{{post.title}}</div><br>
+
+              <div class='conf_authors'>{{post.authors}}</div><br>
+
+              <div class='conf_venue'>{{ post.venue }}
+                {{ post.date | default: "1900-01-01" | date: "%Y" }}, {{post.city}} {{post.state}}</div><br>
+
+              {% if post.paperurl %}
+                <a class="button pdf" href="{{post.paperurl}}" rel="permalink">Pdf</a>
+              {% endif %}
+
+              {% if post.arxiv %}
+                <a class="button arxiv " href="{{post.arxiv}}" rel="permalink">ArXiv</a>
+              {% endif %}
+
+              {% if post.bibtex %}
+                <a class="button bibtex" href="{{post.bibtex}}" rel="permalink">BibTex</a>
+              {% endif %}
+
+              {% if post.project %}
+                <a class="button project" href="{{post.project}}" rel="permalink">Project Page</a>
+              {% endif %}
+
+              {% if post.source %}
+                <a class="button source" href="{{post.source}}" rel="permalink">Code</a>
+              {% endif %}
+            </td>
+
+
         {% endif %}
-      </td>
   </article>
 </div>
-
-{% comment %} <a href="javascript:toggleBibtex('Maninis2017')">[BibTeX]</a> {% endcomment %}
-{% comment %} <a href="http://arxiv.org/abs/1701.04658" target="_blank">[PDF]</a> <a href="http://www.vision.ee.ethz.ch/~cvlsegmentation/cob/"  target="_blank">[Project Page]</a> {% endcomment %}
-{% comment %} </p> {% endcomment %}
-{% comment %} <div id="bib_Maninis2017" class="bibtex noshow"> {% endcomment %}
-{% comment %} <pre> {% endcomment %}
-{% comment %} @article{Maninis2017, {% endcomment %}
-{% comment %}   author = {Maninis, Kevis-Kokitsi and Pont-Tuset, Jordi and Arbel&aacute;ez, Pablo and Van Gool, Luc}, {% endcomment %}
-{% comment %}   title = {Convolutional Oriented Boundaries: From Image Segmentation to High-Level Tasks}, {% endcomment %}
-{% comment %}   journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)}, {% endcomment %}
-{% comment %}   year = {2017} {% endcomment %}
-{% comment %} } {% endcomment %}
-{% comment %} </pre> {% endcomment %}
-{% comment %} </div> {% endcomment %}
-{% comment %} </li> {% endcomment %}

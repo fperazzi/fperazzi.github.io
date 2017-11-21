@@ -4,11 +4,10 @@
 
 table {
   margin-bottom: 1em;
-  width: 100%;
   font-family: $global-font-family;
-  font-size: $type-size-6;
+  font-size: $type-size-c;
   border-collapse: collapse;
-  border: 1px solid $light-gray;
+  border-spacing: 2px;
 
   & + table {
     margin-top: 1em;
@@ -29,17 +28,9 @@ th {
 
 td {
   padding: 0.5em;
-  border-bottom: 1px solid $light-gray;
-  border-right: 1px solid $light-gray;
+  align: center;
 }
 
 tr, td, th {
   vertical-align: middle;
-}
-
-td.test {
-  padding: 0.5em;
-  border-bottom: 10px solid $light-gray;
-  border-right: 10px solid $light-gray;
-  background-color: $gray;
 }
