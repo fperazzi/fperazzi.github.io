@@ -7,10 +7,10 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Your Name / Site Title"
+title                    : "Federico Perazzi/ Disney Research"
 title_separator          : "-"
-name                     : &name "Your Name"
-description              : &description "personal description"
+name                     : &name "Federico Perazzi"
+description              : &description "Postdoctoral Researcher at Disney Research"
 url                      : https://fperazzi.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "fperazzi/fperazzi.github.io"
@@ -83,7 +83,9 @@ author:
   bio              : "Postdoctoral Researcher"
   googlescholar    : "https://scholar.google.ch/citations?user=z-oSdPoAAAAJ&hl=en"
   location         : "Zurich, CH"
+  location_map     : ""
   employer         : "Disney Research"
+  employer_link    : "https://www.disneyresearch.com"
   email            : "federico@disneyresearch"
   uri              :
   bitbucket        :
