@@ -22,6 +22,9 @@
   <div class="author__urls-wrapper">
     {% comment %} <button class="btn btn--inverse">Follow</button> {% endcomment %}
     <ul class="author__urls social-icons">
+      {% if author.email %}
+        <li><a href="mailto:{{ author.email }}"><i class="fa fa-fw fa-envelope-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].email_label | default: "Email" }}</a></li>
+      {% endif %}
       {% if author.location %}
         <li><a href="{{ author.location_map}}"><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> {{ author.location }}</a></li>
       {% endif %}
@@ -31,8 +34,11 @@
       {% if author.uri %}
         <li><a href="{{ author.uri }}"><i class="fa fa-fw fa-chain" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].website_label | default: "Website" }}</a></li>
       {% endif %}
-      {% if author.email %}
-        <li><a href="mailto:{{ author.email }}"><i class="fa fa-fw fa-envelope-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].email_label | default: "Email" }}</a></li>
+      {% if author.googlescholar %}
+        <li><a href="{{ author.googlescholar }}"><i class="ai ai-google-scholar-square ai-fw"></i>Google Scholar</a></li>
+      {% endif %}
+      {% if author.curriculumvitae%}
+        <li><a href="{{author.curriculumvitae | prepend: "/files/"}}"><i class="ai ai-google-scholar-square ai-fw"></i>Curriculum Vitae</a></li>
       {% endif %}
       {% if author.keybase %}
         <li><a href="https://keybase.io/{{ author.keybase }}"><i class="fa fa-fw fa-key" aria-hidden="true"></i> Keybase</a></li>
@@ -99,9 +105,6 @@
       {% endif %}
       {% if author.vine %}
         <li><a href="https://vine.co/u/{{ author.vine }}"><i class="fa fa-fw fa-vine" aria-hidden="true"></i> Vine</a></li>
-      {% endif %}
-      {% if author.googlescholar %}
-        <li><a href="{{ author.googlescholar }}"><i class="ai ai-google-scholar-square ai-fw"></i>Google Scholar</a></li>
       {% endif %}
       {% if author.orcid %}
         <li><a href="{{ author.orcid }}"><i class="ai ai-orcid-square ai-fw"></i> ORCID</a></li>

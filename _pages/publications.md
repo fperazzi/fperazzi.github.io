@@ -36,8 +36,8 @@ I am a Post-Doctoral Researcher at [Disney Research Zurich](http://www.disneyres
 </table>
 
 ## Teaching
-<table>
+<ul class="no_bullet">
 {% for post in site.teaching reversed %}
-  <tr>{% include archive-single.html %}</tr>
+  <li>{% include teaching.html %}</li>
 {% endfor %}
-</table>
+</ul>

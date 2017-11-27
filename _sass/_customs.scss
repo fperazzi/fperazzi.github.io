@@ -104,3 +104,8 @@ a.data:hover {
   text-decoration: none;
   background-color: 	#FF00FF; /* Magenta */
 }
+
+ul.no_bullet {
+  padding: 0px;
+  list-style-type: none;
+}

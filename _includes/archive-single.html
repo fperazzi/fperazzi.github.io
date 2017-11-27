@@ -3,14 +3,12 @@
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         {% if post.collection == 'teaching' %}
-          <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+          <td> {{post.course}} [ <a href="{{post.paperurl}}">{{post.year}}</a> ]</td>
 
         {% elsif post.collection == 'publications' or post.collection == 'workshops' %}
-
             <td>
               <a href="{{post.paperurl | prepend: "/files/papers/" }}"><img class="table_entry" src="{{post.thumbnail | prepend: "/files/thumbnails/" }}"></a>
             </td>
-
             <td>
               <div class='conf_title'>{{post.title}}</div><br>
 
