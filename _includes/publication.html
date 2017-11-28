@@ -2,10 +2,7 @@
 
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        {% if post.collection == 'teaching' %}
-          <td> {{post.course}} [ <a href="{{post.paperurl}}">{{post.year}}</a> ]</td>
-
-        {% elsif post.collection == 'publications' or post.collection == 'workshops' %}
+        {% if post.collection == 'publications' or post.collection == 'workshops' %}
             <td>
               <a href="{{post.paperurl | prepend: "/files/papers/" }}"><img class="table_entry" src="{{post.thumbnail | prepend: "/files/thumbnails/" }}"></a>
             </td>

@@ -1,0 +1,17 @@
+{% include base_path %}
+
+<div class="{{ include.type | default: "list" }}__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        {% if post.collection == 'patents' %}
+          <div class='conf_title'><a href="{{post.uri}}">{{post.title}}</a></div><br>
+          {% comment %} <div class='conf_title'>{{post.title}}</div><br> {% endcomment %}
+          {{post.type}}
+          {% if post.publication %}
+            No. {{post.publication}}
+          {% elsif post.application %}
+            App. {{post.application}}
+          {% endif %}
+          {% comment %} <div class='conf_authors'>{{post.authors}}</div><br> {% endcomment %}
+        {% endif %}
+  </article>
+</div>

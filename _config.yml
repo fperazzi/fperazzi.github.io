@@ -83,10 +83,10 @@ author:
   bio              : "Postdoctoral Researcher"
   googlescholar    : "https://scholar.google.ch/citations?user=z-oSdPoAAAAJ&hl=en"
   location         : "Zurich, CH"
-  location_map     : ""
+  location_map     : "https://goo.gl/maps/vgSn3ihG5aM2"
   employer         : "Disney Research"
   employer_link    : "https://www.disneyresearch.com"
-  email            : "federico@disneyresearch"
+  email            : "federico@disneyresearch.com"
   curriculumvitae  : "federicoperazzi-cv.pdf"
   uri              :
   bitbucket        :
@@ -98,7 +98,7 @@ author:
   github           : "fperazzi"
   google_plus      :
   keybase          :
-  instagram        :
+  instagram        : "_memecs_"
   lastfm           :
   linkedin         :
   orcid            :
