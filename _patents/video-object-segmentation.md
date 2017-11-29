@@ -1,5 +1,5 @@
 ---
-title: "Methods and systems of performing video object segmentation"
+title: "Methods and Systems of Performing Video Object Segmentation"
 collection: patents
 permalink: /patents/video-object-segmentation
 date: 2016-02-16

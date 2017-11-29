@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Federico Perazzi/ Disney Research"
+title                    : "Federico Perazzi"
 title_separator          : "-"
 name                     : &name "Federico Perazzi"
 description              : &description "Postdoctoral Researcher at Disney Research"

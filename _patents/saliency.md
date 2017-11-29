@@ -1,5 +1,5 @@
 ---
-title: "Visual saliency estimation for images and video"
+title: "Visual Saliency Estimation for Images and Video"
 collection: patents
 permalink: /patents/saliency
 date: 2015-05-25
