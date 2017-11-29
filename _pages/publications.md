@@ -11,6 +11,14 @@ author_profile: true
 {% include base_path %}
 I am a Post-Doctoral Researcher at [Disney Research Zurich](http://www.disneyresearch.com), in the _Imaging and Video Processing Group_ lead by [Dr. Alexander Sorkine-Hornung](http://www.disneyresearch.com/people/alexander-hornung) My research interests span Computer Vision and Machine Learning.
 
+{% if site.data.news.size > 0 %}
+<ul class="no_bullet">
+  {% for news in site.data.news %}
+    <li>{{news.date}} {{news.description}}</li>
+  {% endfor %}
+</ul>
+{% endif %}
+
 ## Publications
 <table>
 {% for post in site.publications reversed %}

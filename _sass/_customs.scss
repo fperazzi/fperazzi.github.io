@@ -102,7 +102,7 @@ a.source:hover {
 
 a.data:hover {
   text-decoration: none;
-  background-color: 	#FF00FF; /* Magenta */
+  background-color: #FF00FF; /* Magenta */
 }
 
 ul.no_bullet {
@@ -110,4 +110,11 @@ ul.no_bullet {
   list-style-type: none;
   font-family: $global-font-family;
   font-size: 1.03em;
+}
+
+div.news {
+  background-color: $lighter-gray;
+  border: 1px solid $info-color;
+  border-radius: 10px;
+  padding-left: 10px;
 }
