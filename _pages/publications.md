@@ -40,3 +40,13 @@ I am a Post-Doctoral Researcher at [Disney Research Zurich](http://www.disneyres
 {% endfor %}
 </ul>
 
+{% if site.data.teaching.size > 0 %}
+<h2> Teaching </h2>
+<ul class="no_bullet">
+  {% for entry in site.data.teaching %}
+    <li><div class='conf_title'><a href="{{entry.url}}">{{entry.course}}</a></div><br>
+    {{entry.semester}} - {{entry.institution}}
+    </li>
+  {% endfor %}
+</ul>
+{% endif %}
