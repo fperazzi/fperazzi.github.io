@@ -6,23 +6,25 @@ img.table_entry {
   box-sizing: border-box;
   margin: auto;
   object-fit: scale-down;
+  max-width: none;
 }
 
 div.conf_title {
   font-weight: bold;
   display:inline;
-  font-size: 14px;
+  font-size: $type-size-5;
 }
 
 div.conf_venue {
 }
 
 div.conf_authors {
+  font-style: italic;
 }
 
 div.conf_authors, div.conf_venue {
   display:inline;
-  font-size: 14px;
+  font-size: $type-size-c;
 }
 
 
@@ -36,7 +38,7 @@ a.button {
     margin: 1px 1px;
     padding: 2px 6px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: $type-size-c;
     font-family: $global-font-family;
     border-radius: 4px;
     // background-color: white;

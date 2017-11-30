@@ -56,11 +56,11 @@
   h2 {
     padding-bottom: 0.2em;
     border-bottom: 1px solid $border-color;
-    font-size: 24px;
+    font-size: $type-size-3;
   }
 
   p, li, dl {
-    font-size: 14px;
+    font-size: 0.875em;
   }
 
   /* paragraph indents */
