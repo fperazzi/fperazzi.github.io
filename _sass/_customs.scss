@@ -12,14 +12,13 @@ img.table_entry {
 div.conf_title {
   font-weight: bold;
   display:inline;
-  font-size: $type-size-5;
+  font-size: 1em;
 }
 
 div.conf_venue {
 }
 
 div.conf_authors {
-  font-style: italic;
 }
 
 div.conf_authors, div.conf_venue {
@@ -37,6 +36,7 @@ a.button {
     display: inline-block;
     margin: 1px 1px;
     padding: 2px 6px;
+    margin-top: 5px;
     cursor: pointer;
     font-size: $type-size-c;
     font-family: $global-font-family;
@@ -110,7 +110,7 @@ ul.no_bullet {
   padding: 0px;
   list-style-type: none;
   font-family: $global-font-family;
-  font-size: 1.03em;
+  font-size: 1em;
 }
 
 div.news {
