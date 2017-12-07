@@ -10,7 +10,7 @@ teaser:
 thumbnail: 'saliency-filters.png'
 authors: "Federico Perazzi, Philipp Krähenbühl, Yael Pritch and Alexander Hornung"
 bibtex: saliency-filters.txt
-paperurl: saliency-filters.pdf
+url: saliency-filters.pdf
 arxiv:
 project: http://graphics.ethz.ch/~perazzif/saliency_filters/index.html
 source: https://graphics.ethz.ch/~perazzif/saliency_filters/files/saliencyfilters.zip

@@ -10,7 +10,7 @@ teaser:
 thumbnail: 'davis.png'
 authors: "F. Perazzi, J. Pont-Tuset, B. McWilliams, L. Van Gool, M. Gross, A. Sorkine-Hornung"
 bibtex: davis.txt
-paperurl: davis.pdf
+url: davis.pdf
 arxiv:
 project: http://davischallenge.org
 source: https://github.com/fperazzi/davis

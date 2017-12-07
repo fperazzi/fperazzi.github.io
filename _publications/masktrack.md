@@ -10,7 +10,7 @@ thumbnail: "masktrack.png"
 teaser : masktrack.jpg
 authors: "F. Perazzi*, A. Khoreva*, R. Benenson, B. Schiele, A. Sorkine-Hornung"
 bibtex: masktrack.txt
-paperurl: masktrack.pdf
+url: masktrack.pdf
 arxiv: https://arxiv.org/abs/1612.02646v1
 project: http://graphics.ethz.ch/~perazzif/masktrack/index.html
 source:

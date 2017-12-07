@@ -1,0 +1,10 @@
+@article{Stanton2013,
+ author = {Stanton, Matt and Sheng, Yu and Wicke, Martin and Perazzi, Federico and Yuen, Amos and Narasimhan, Srinivasa and Treuille, Adrien},
+ title = {Non-polynomial Galerkin Projection on Deforming Meshes},
+ journal = {ACM Trans. Graph.},
+ issue_date = {July 2013},
+ volume = {32},
+ number = {4},
+ year = {2013},
+ publisher = {ACM}
+}
