@@ -10,7 +10,7 @@ teaser:
 thumbnail: 'saliency-fiedler.png'
 authors: "Federico Perazzi, Olga Sorkine-Hornung, Alexander Sorkine-Hornung"
 bibtex: saliency-fiedler.txt
-url: saliency-fiedler.pdf
+uri: saliency-fiedler.pdf
 arxiv:
 project: http://graphics.ethz.ch/~perazzif/saliency_fiedler/index.html
 source: https://graphics.ethz.ch/~perazzif/saliency_fiedler/files/saliency_fiedler.txt

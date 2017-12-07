@@ -10,7 +10,7 @@ thumbnail: "panoramic.png"
 teaser : panoramic.jpg
 authors: "F. Perazzi, A. Sorkine-Hornung, H. Zimmer, P. Kaufmann, O. Wang, S. Watson, M. Gross"
 bibtex: panoramic.txt
-url: panoramic.pdf
+uri: panoramic.pdf
 arxiv:
 project: http://graphics.ethz.ch/~perazzif/panoramic_video/index.html
 source:

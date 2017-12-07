@@ -10,7 +10,7 @@ teaser:
 thumbnail: 'fcop.png'
 authors: "Federico Perazzi, Oliver Wang, Markus Gross, Alexander Sorkine-Hornung"
 bibtex: fcop.txt
-url: fcop.pdf
+uri: fcop.pdf
 arxiv:
 project: https://graphics.ethz.ch/~perazzif/fcop/index.html
 poster: fcop-poster.pdf

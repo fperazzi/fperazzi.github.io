@@ -10,7 +10,7 @@ teaser:
 thumbnail: 'galerkin.png'
 authors: "M. Stanton, Y. Sheng, M. Wicke, F. Perazzi, A. Yuen, S. Narasimhan, A. Treuille"
 bibtex: galerkin.txt
-url: galerkin.pdf
+uri: galerkin.pdf
 arxiv:
 project: http://graphics.cs.cmu.edu/projects/nonpolynomial_galerkin_projection/
 source:
