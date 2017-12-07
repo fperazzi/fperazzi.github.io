@@ -15,4 +15,5 @@ arxiv:
 project: http://graphics.ethz.ch/~perazzif/saliency_filters/index.html
 source: https://graphics.ethz.ch/~perazzif/saliency_filters/files/saliencyfilters.zip
 data: https://graphics.ethz.ch/~perazzif/saliency_filters/files/SF_maps.zip
+poster: saliency-filters-poster.pdf
 ---

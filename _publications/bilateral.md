@@ -14,5 +14,6 @@ url: bilateral.pdf
 arxiv:
 project: https://graphics.ethz.ch/~perazzif/bvs/index.html
 source: https://github.com/owang/BilateralVideoSegmentation
+poster: bilateral-poster.pdf
 data:
 ---

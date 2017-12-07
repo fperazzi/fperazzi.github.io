@@ -13,5 +13,6 @@ bibtex: fcop.txt
 url: fcop.pdf
 arxiv:
 project: https://graphics.ethz.ch/~perazzif/fcop/index.html
+poster: fcop-poster.pdf
 data:
 ---

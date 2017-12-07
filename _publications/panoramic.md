@@ -15,4 +15,5 @@ arxiv:
 project: http://graphics.ethz.ch/~perazzif/panoramic_video/index.html
 source:
 data: https://graphics.ethz.ch/~perazzif/panoramic_video/data.html
+video: https://youtu.be/SHu8x2YaQJc
 ---

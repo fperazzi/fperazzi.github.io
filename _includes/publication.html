@@ -37,6 +37,12 @@
               {% if post.data %}
                 <a class="button data" href="{{post.data}}" rel="permalink">Data</a>
               {% endif %}
+              {% if post.poster%}
+                <a class="button poster" href="{{post.poster | prepend: "/files/posters/"}}" rel="permalink">Poster</a>
+              {% endif %}
+              {% if post.video %}
+                <a class="button video" href="{{post.video}}" rel="permalink">Video</a>
+              {% endif %}
             </td>
 
 

@@ -14,5 +14,6 @@ url: davis.pdf
 arxiv:
 project: http://davischallenge.org
 source: https://github.com/fperazzi/davis
+poster: davis-poster.pdf
 data:
 ---

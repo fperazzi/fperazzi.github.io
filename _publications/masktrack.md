@@ -14,5 +14,6 @@ url: masktrack.pdf
 arxiv: https://arxiv.org/abs/1612.02646v1
 project: http://graphics.ethz.ch/~perazzif/masktrack/index.html
 source:
+poster: masktrack-poster.pdf
 data:
 ---
