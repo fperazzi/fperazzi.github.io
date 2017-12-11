@@ -5,7 +5,7 @@
 .page__footer {
   @include full();
   @include clearfix;
-  margin-top: 3em;
+  margin-top: 0.5em;
   color: mix(#fff, $gray, 25%);
   -webkit-animation: intro 0.3s both;
           animation: intro 0.3s both;
@@ -17,11 +17,11 @@
   footer {
     @include container;
     @include clearfix;
-    margin-top: 2em;
-    padding: 0 1em 2em;
+    margin-top: 0.5em;
+    padding: 0 1em 0.5em;
 
     @include breakpoint($x-large) {
-      max-width: $x-large;
+      // max-width: $x-large;
     }
   }
 
@@ -41,7 +41,7 @@
 
 .page__footer-copyright {
   font-family: $global-font-family;
-  font-size: $type-size-7;
+  font-size: $type-size-6;
 }
 
 .page__footer-follow {
