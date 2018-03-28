@@ -12,7 +12,7 @@ authors: "J. Pont-Tuset, F. Perazzi, S. Caelles, P. Arbeláez, A. Sorkine-Hornun
 bibtex: davis-cvprw-2017.txt
 paperurl: davis-cvprw-2017.pdf
 arxiv: https://arxiv.org/abs/1704.00675
-project: http://davis-cvprw-2017challenge.org
+project: http://davischallenge.org/challenge2017/index.html
 source: https://github.com/fperazzi/davis-2017
-data: http://davischallenge.org/code.html
+data: http://davischallenge.org/davis2017/code.html
 ---
