@@ -4,15 +4,25 @@
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         {% if post.collection == 'publications' or post.collection == 'workshops' %}
             <td>
-              <a href="{{post.uri | prepend: "/files/publications/" }}"><img class="table_entry" src="{{post.thumbnail | prepend: "/files/thumbnails/" }}"></a>
+              {% if post.uri %}
+                <a href="{{post.uri | prepend: "/files/publications/" }}"><img class="table_entry" src="{{post.thumbnail | prepend: "/files/thumbnails/" }}"></a>
+              {% else %}
+                <img class="table_entry" src="{{post.thumbnail | prepend: "/files/thumbnails/" }}">
+            {% endif %}
             </td>
             <td>
               <div class='conf_title'>{{post.title}}</div><br>
 
               <div class='conf_authors'>{{post.authors}}</div><br>
 
-              <div class='conf_venue'>{{ post.venue }}
-                {{ post.date | default: "1900-01-01" | date: "%Y" }}, {{post.city}}, {{post.state}}</div><br>
+              <div class='conf_venue'>
+                {% if post.venue%}{{post.venue}}{% endif %}
+                {% if post.date %}{{ post.date | default: "1900-01-01" | date: "%Y" }}{% endif %}
+
+                {% if post.city %}, {{post.city}}{% endif %}
+                {% if post.state %}, {{post.state}}{% endif %}
+
+              </div><br>
 
               {% if post.uri %}
                 <a class="button pdf" href="{{post.uri | prepend: "/files/publications/"}}" rel="permalink">Pdf</a>
