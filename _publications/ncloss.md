@@ -10,5 +10,6 @@ thumbnail: "ncloss.png"
 authors: "M. Tang, A. Djelouah, F. Perazzi, Y. Boykov, C. Schroers"
 uri: ncloss.pdf
 arxiv:
+bibtex: ncloss.txt
 data:
 ---
