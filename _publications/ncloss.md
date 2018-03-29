@@ -8,7 +8,7 @@ city: "Salt Lake City"
 state: "Utah"
 thumbnail: "ncloss.png"
 authors: "M. Tang, A. Djelouah, F. Perazzi, Y. Boykov, C. Schroers"
-uri:
+uri: ncloss.pdf
 arxiv:
 data:
 ---
