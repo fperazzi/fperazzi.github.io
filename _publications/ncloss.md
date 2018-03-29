@@ -1,5 +1,5 @@
 ---
-title: "Normalized Cut Loss for Weakly Supervised CNN Segmentation"
+title: "Normalized Cut Loss for Weakly-supervised CNN Segmentation"
 collection: publications
 permalink: /publication/ncloss
 date: 2018-03-28
