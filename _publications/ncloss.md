@@ -9,7 +9,7 @@ state: "Utah"
 thumbnail: "ncloss.png"
 authors: "M. Tang, A. Djelouah, F. Perazzi, Y. Boykov, C. Schroers"
 uri: ncloss.pdf
-arxiv:
+arxiv: https://arxiv.org/abs/1804.01346
 bibtex: ncloss.txt
 data:
 ---
