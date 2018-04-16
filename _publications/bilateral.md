@@ -5,7 +5,7 @@ permalink: /publication/bilateral
 date: 2016-06-20
 venue: 'CVPR'
 city: 'Las Vegas'
-state: 'NV'
+state: 'Nevada'
 teaser:
 thumbnail: 'bilateral.png'
 authors: "Nicolas Märki, Federico Perazzi, Oliver Wang, Alexander Sorkine-Hornung"

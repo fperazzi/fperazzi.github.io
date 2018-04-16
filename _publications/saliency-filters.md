@@ -5,7 +5,7 @@ permalink: /publication/saliency-filters
 date: 2012-06-21
 venue: 'CVPR'
 city: 'Providence'
-state: 'RI'
+state: 'Rhode Island'
 teaser:
 thumbnail: 'saliency-filters.png'
 authors: "Federico Perazzi, Philipp Krähenbühl, Yael Pritch and Alexander Hornung"

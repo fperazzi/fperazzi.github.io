@@ -1,0 +1,6 @@
+@InProceedings{Wang2018CVPRW,
+  author = {Wang, Yifan and Perazzi, Federico and McWilliams, Brian and Sorkine-Hornung, Alexander and Sorkine-Hornung, Olga and Schroers, Christopher}
+  title = {A Fully Progressive Approach to Single-Image Super-Resolution},
+  booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
+  year = {2018}
+}

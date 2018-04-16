@@ -5,7 +5,7 @@ permalink: /publication/masktrack
 date: 2017-08-20
 venue: "CVPR"
 city: "Honolulu"
-state: "HI"
+state: "Hawaii"
 thumbnail: "masktrack.png"
 teaser : masktrack.jpg
 authors: "F. Perazzi*, A. Khoreva*, R. Benenson, B. Schiele, A. Sorkine-Hornung"

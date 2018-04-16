@@ -3,7 +3,7 @@ title: 'Efficient Salient Foreground Detection for Images and Video using Fiedle
 collection: publications
 permalink: /publication/saliency-fiedler
 date: 2015-05-01
-venue: 'Eurographics Workshop on Intelligent Cinematography and Editing'
+venue: 'Eurographics WICED'
 city: 'Zurich'
 state: 'Switzerland'
 teaser:

@@ -5,7 +5,7 @@ permalink: /publication/galerkin
 date: 2013-07-01
 venue: 'SIGGRAPH'
 city: 'Anaheim'
-state: 'CA'
+state: 'California'
 teaser:
 thumbnail: 'galerkin.png'
 authors: "M. Stanton, Y. Sheng, M. Wicke, F. Perazzi, A. Yuen, S. Narasimhan, A. Treuille"

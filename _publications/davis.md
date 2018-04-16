@@ -5,7 +5,7 @@ permalink: /publication/davis
 date: 2016-06-20
 venue: 'CVPR'
 city: 'Las Vegas'
-state: 'NV'
+state: 'Nevada'
 teaser:
 thumbnail: 'davis.png'
 authors: "F. Perazzi, J. Pont-Tuset, B. McWilliams, L. Van Gool, M. Gross, A. Sorkine-Hornung"
