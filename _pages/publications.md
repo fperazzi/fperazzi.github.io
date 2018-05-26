@@ -13,7 +13,7 @@ I am a Research Scientist in the _Creative Intelligence Lab_, at [Adobe Research
 
 My research interests span Computer Vision and Machine Learning.
 
-If you are a talented PhD student looking for an internship at Adobe or interested to collaborate on an research project, send me an email.
+If you are a talented PhD student looking for an internship at Adobe or interested to collaborate on a research project, send me an email.
 
 
 
