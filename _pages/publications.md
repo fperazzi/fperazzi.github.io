@@ -9,11 +9,11 @@ author_profile: true
 
 <h2 style="margin-top: 5px">Research</h2>
 {% include base_path %}
-I am a Research Scientist in the _Creative Intelligence Lab_, at [Adobe Research](https://research.adobe.com).
+I am a Research Scientist in the _Creative Intelligence Lab_, at [Adobe Research](https://research.adobe.com). Prior to joining Adobe, I spent eight wonderful years as Intern, PhD and Post-Doctoral Researcher at [Disney Research](http://www.disneyresearch.com), in the _Imaging and Video Processing Group_. I obtained my PhD in 2017 from [ETHZ](https://www.inf.ethz.ch/).
 
-Prior to joining Adobe, I spent eight wonderful years as Intern, PhD and Post-Doctoral Researcher at [Disney Research](http://www.disneyresearch.com), in the _Imaging and Video Processing Group_. I obtained my PhD in 2017 from [ETHZ](https://www.inf.ethz.ch/).
+My research interests span Computer Vision and Machine Learning.
 
-My research interests span Computer Vision and Machine Learning. If you are a talented PhD student looking for an internship at Adobe or interested to collaborate on an research project, send me an email.
+If you are a talented PhD student looking for an internship at Adobe or interested to collaborate on an research project, send me an email.
 
 
 
