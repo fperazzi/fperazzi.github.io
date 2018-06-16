@@ -11,6 +11,6 @@ authors: "Y. Wang, F. Perazzi, B. McWilliams, A. and O. Sorkine-Hornung, C. Schr
 uri: prosr.pdf
 arxiv: https://arxiv.org/abs/1804.02900
 bibtex: prosr.txt
-source:https://github.com/fperazzi/proSR
+source: https://github.com/fperazzi/proSR
 data:
 ---
