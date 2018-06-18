@@ -12,5 +12,6 @@ uri: prosr.pdf
 arxiv: https://arxiv.org/abs/1804.02900
 bibtex: prosr.txt
 source: https://github.com/fperazzi/proSR
+project: https://yifita.github.io/publication/prosr/
 data:
 ---
