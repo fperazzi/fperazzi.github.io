@@ -41,18 +41,22 @@ a.button {
     font-size: $type-size-c;
     font-family: $global-font-family;
     border-radius: 4px;
-    // background-color: white;
-    background-color: #FFFFFF;
-    color: $info-color;
+    background-color: white;
+    // background-color: #FFFFFF;
+    // color: $info-color;
+    color: $dark-gray;
     -webkit-transition-duration: 0.2s; /* Safari */
-    border: 1px solid #4183c4;
+    border: 1px solid #6c6c6c;
     transition-duration: 0.2s;
 }
 .button:hover {
     // background-color: #4CAF50; /* Green */
-    color: white;
-    background-color: #4183c4;
-    text-decoration: none;
+    // color: white;
+    // background-color: $dark-gray;
+    // text-decoration: none;
+    //
+  border: 1px solid $info-color;
+  color: $info-color
 }
 
 // a.bibtex {
