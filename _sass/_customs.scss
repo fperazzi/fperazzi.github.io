@@ -42,15 +42,17 @@ a.button {
     font-family: $global-font-family;
     border-radius: 4px;
     // background-color: white;
-    background-color: #F0F0F0;
+    background-color: #FFFFFF;
     color: $info-color;
     -webkit-transition-duration: 0.2s; /* Safari */
+    border: 1px solid #4183c4;
     transition-duration: 0.2s;
 }
 .button:hover {
-    background-color: #4CAF50; /* Green */
-    text-decoration: none;
+    // background-color: #4CAF50; /* Green */
     color: white;
+    background-color: #4183c4;
+    text-decoration: none;
 }
 
 // a.bibtex {
@@ -59,7 +61,7 @@ a.button {
 
 a.bibtex:hover {
   text-decoration: none;
-  background-color: #4CAF50; /* Green */
+  // background-color: #4CAF50; /* Green */
 }
 
 // a.pdf {
@@ -67,7 +69,7 @@ a.bibtex:hover {
 // }
 
 a.pdf:hover {
-  background-color: $info-color; /* Link */
+  // background-color: $info-color; /* Link */
   text-decoration: none;
 }
 
@@ -77,7 +79,7 @@ a.pdf:hover {
 
 a.project:hover {
   text-decoration: none;
-  background-color: #ffcc33; /* Orange */
+  // background-color: #ffcc33; /* Orange */
 }
 
 // a.arxiv {
@@ -86,7 +88,7 @@ a.project:hover {
 
 a.arxiv:hover {
   text-decoration: none;
-  background-color: #f44336; /* Red */
+  // background-color: #f44336; /* Red */
 }
 // a.source {
 //   border: 2px solid #9932CC; /* Purple */
@@ -94,17 +96,17 @@ a.arxiv:hover {
 
 a.source:hover {
   text-decoration: none;
-  background-color: #9932CC;
+  // background-color: #9932CC;
 }
 
 a.video:hover {
   text-decoration: none;
-  background-color: #7FFFD4;
+  // background-color: #7FFFD4;
 }
 
 a.poster:hover {
   text-decoration: none;
-  background-color: #FF6836;
+  // background-color: #FF6836;
 }
 
 // a.data {
@@ -113,7 +115,7 @@ a.poster:hover {
 
 a.data:hover {
   text-decoration: none;
-  background-color: #FF00FF; /* Magenta */
+  // background-color: #FF00FF; /* Magenta */
 }
 
 ul.no_bullet {
