@@ -13,6 +13,5 @@ bibtex: saliency-fiedler.txt
 uri: saliency-fiedler.pdf
 arxiv:
 project: http://graphics.ethz.ch/~perazzif/saliency_fiedler/index.html
-source: https://graphics.ethz.ch/~perazzif/saliency_fiedler/files/saliency_fiedler.txt
 data:
 ---
