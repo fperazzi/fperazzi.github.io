@@ -13,5 +13,6 @@ arxiv: https://arxiv.org/abs/1804.02900
 bibtex: prosr.txt
 source: https://github.com/fperazzi/proSR
 project: https://yifita.github.io/publication/prosr/
+video: https://vimeo.com/272673051
 data:
 ---
