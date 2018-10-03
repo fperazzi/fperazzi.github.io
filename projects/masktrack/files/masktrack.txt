@@ -1,0 +1,6 @@
+@inproceedings{Perazzi2017,
+  author={F. Perazzi and A. Khoreva and R. Benenson and B. Schiele and A.Sorkine-Hornung},
+  title={Learning Video Object Segmentation from Static Images},
+  booktitle = {Computer Vision and Pattern Recognition},
+  year = {2017}
+}
