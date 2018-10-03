@@ -12,8 +12,8 @@ authors: "Federico Perazzi, Philipp Krähenbühl, Yael Pritch and Alexander Horn
 bibtex: saliency-filters.txt
 uri: saliency-filters.pdf
 arxiv:
-project: http://graphics.ethz.ch/~perazzif/saliency_filters/index.html
-source: https://graphics.ethz.ch/~perazzif/saliency_filters/files/saliencyfilters.zip
-data: https://graphics.ethz.ch/~perazzif/saliency_filters/files/SF_maps.zip
+project: /projects/saliency_filters/index.html
+source: /projects/saliency_filters/files/saliencyfilters.zip
+data: /projects/saliency_filters/files/SF_maps.zip
 poster: saliency-filters-poster.pdf
 ---

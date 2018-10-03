@@ -12,7 +12,7 @@ authors: "Federico Perazzi, Oliver Wang, Markus Gross, Alexander Sorkine-Hornung
 bibtex: fcop.txt
 uri: fcop.pdf
 arxiv:
-project: https://graphics.ethz.ch/~perazzif/fcop/index.html
+project: /projects/fcop/index.html
 poster: fcop-poster.pdf
 data:
 ---

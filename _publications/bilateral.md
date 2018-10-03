@@ -12,7 +12,7 @@ authors: "Nicolas Märki, Federico Perazzi, Oliver Wang, Alexander Sorkine-Hornu
 bibtex: bilateral.txt
 uri: bilateral.pdf
 arxiv:
-project: https://graphics.ethz.ch/~perazzif/bvs/index.html
+project: /projects/bvs/index.html
 source: https://github.com/owang/BilateralVideoSegmentation
 poster: bilateral-poster.pdf
 data:
