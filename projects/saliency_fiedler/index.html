@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+<title>Saliency Fiedler - Saliency Detection, Saliency Map, Video Saliency </title>
+<meta name="author" content="Federico Perazzi" >
+<meta name="keywords" content="Saliency Filters Maps Detection Salient">
+<meta name="description" content="CVPR Saliency Filters">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="expires" content="0">
+
+<style type="text/css">
+
+	a:link       { color: #0000C0; text-decoration=none }
+	a:visited    { color: #0000C0; text-decoration=none }
+	a:active     { color: #0000FF; text-decoration=none }
+	a:hover      { color: #0080FF; text-decoration=none }
+
+	body {
+				font-family: arial, helvetica, sans-serif; font-size: 11pt;
+				margin: 80px;
+				margin-top:    70px;
+				margin-bottom: 70px;
+	}
+
+	h1 { font-size: 200%; margin-top 20px;margin-bottom: 20px; }
+	h2 { font-size: 150%;margin-top: 60px;margin-bottom: 10px;}
+	h3 { font-size: 100%; margin-top: 20px; margin-bottom: 10px;}
+	p  { margin-top: 0em; margin-bottom: 5px  }
+
+</style>
+</head>
+
+<body>
+<div align="left" >
+  <h2 align="center"><strong>Efficient Salient Foreground Detection for Images and Video using Fiedler Vectors</strong></h2>
+	<p align="center">
+		<sup>1,2</sup><a href="https://fperazzi.github.io"/>Federico Perazzi</a>&nbsp;&nbsp;
+		<sup>1</sup><a href="http://igl.ethz.ch/people/sorkine">Olga Sorkine-Hornung</a>&nbsp;&nbsp;
+		<sup>2</sup><a href="http://www.ahornung.net">Alexander Sorkine-Hornung</a>&nbsp;&nbsp;
+	</p>
+	<p align="center"><sup>1</sup>ETH Zurich&nbsp;&nbsp;&nbsp;&nbsp;<sup>2</sup>Disney Research Zurich&nbsp;&nbsp;&nbsp;&nbsp;</p>
+	</br></br>
+	<p align="center"><img src="./files/movie_04048_CRF.png" alt="" width="600"/></p></br>
+	<p align="left">Figure 1. Saliency results on video. Top left: input video
+frame. Top right: superpixel segmentation. Bottom left: our
+per-frame saliency. Bottom right: final, temporally coherent
+saliency. Note how spurious, salient background elements on
+the car and sky are removed</p>
+  <h2>Abstract</h2>
+	<p align="justify">
+Automatic detection of salient image regions is a useful tool with applications
+in intelligent camera control, virtual cinematography, video summarization and
+editing, evaluation of viewer preferences, and many others. This paper
+presents an effective method for detecting potentially salient foreground
+regions. Salient regions are identified by eigenvalue analysis of a graph
+Laplacian that is defined over the color similarity of image superpixels, under
+the assumption that the majority of pixels on the image boundary show
+non-salient background. In contrast to previous methods based on graph-cuts or
+graph partitioning, our method provides continuously-valued saliency estimates
+with complementary properties to recently proposed color contrast-based
+approaches. Moreover, exploiting discriminative properties of the Fiedler
+vector, we devise an SVM-based classifier that allows us to determine whether
+an image contains any salient objects at all, a problem that has been largely
+neglected in previous works. We also describe how the per-frame saliency
+detection can be extended to improve its spatiotemporal coherence when computed
+on video sequences. Extensive evaluation on several datasets demonstrates and
+validates the state-of-the-art performance of the proposed method.
+</p>
+
+	</br>
+	<p align="center"><img src="./files/results3.png" alt="" width="600"/></p>
+	<p align="left">
+Figure 2. Saliency computation based on concepts such as global contrast and color
+uniqueness is less suitable for multi-colored objects (first row), multiple
+unique colors (second row), and cases where fore- and background are rather
+similar (third row). The second column shows corresponding saliency maps
+computed with a representative method based on various contrast measures
+[PKPH12]. Our approach successfully handles such challenging cases and produces
+results closer to ground truth. Moreover, a unique feature of our approach is
+its ability to identify whether an image contains any salient object at all
+(bottom row).</p>
+
+	</br>
+
+<h2>Introduction</h2>
+
+<p align="justify">
+In this paper we propose a highly effective method for computational saliency
+estimation, Our algorithm is based on the basic
+assumption that most of the image boundaries are covered by non-salient
+background. Background color priors and local color similarities are encoded in
+a graph structure defined over a superpixel segmentation of images or video
+frames. We then show that the Fiedler vector of the corresponding graph
+Laplacian is a very effective and robust way to compute saliency masks. In
+particular, our formulation allows us to determine whether a salient object is
+present at all by training a support vector machine using properties of the
+Fiedler vector. This problem has largely been neglected in previous works,
+which always highlight some regions as salient, even if an image contains
+background only. In addition, differently from previous approaches that use
+various heuristics or graph-cut segmentation to binarize saliency maps, the
+entries of the Fiedler vector yield both a continuous estimate and a
+content-adaptive binary partition. Finally, we describe an extension of the
+per-frame saliency detection to video, which improves the spatiotemporal
+coherence of the results. Despite its computational simplicity, we show in our
+examples and evaluation that our method compares favorably to the recent
+methods and efficiently handles various image and video types that are
+challenging for previous approaches. To demonstrate the complementary nature of
+our method, we also show that the performance can be further increased when
+combining our approach with a recent color contrast-based technique.
+</p>
+
+
+<h2>Citation - BibTeX</h2>
+<p align="justify">
+<p>Federico Perazzi, Olga Sorkine Hornung, Alexander Sorkine-Hornung. Efficient Salient Foreground Detection for Images and Video using Fiedler Vectors. <i>Eurographics Workshop on Intelligent Cinematography and Editing</i>, Zurich, Switzerland, May 5th, 2015. [ <a href="./files/saliency_fiedler.pdf">Pdf 7.7MB</a> ][ <a href="./files/saliency_fiedler.txt">BibTeX</a> ]</p>
+
+<!--[ <a href="./files/SF_maps.zip">Data</a> ] [ <a href="./files/saliency_filters_poster_cvpr_2012.pdf">Poster</a> ] [ <a href="./files/saliency_filters_cvpr_2012.txt">BibTeX</a> ]</p>-->
+
+<!--<h2>Supplementary Material</h2>-->
+<!--<p align="justify">-->
+<!--The dataset of images, including sources, ground-truth segmentations as well as several others saliency maps from other state-of-the-art methods can be found in [<a href="http://ivrgwww.epfl.ch/supplementary_material/RK_CVPR09/index.html">2</a>] and [<a href="http://cg.cs.tsinghua.edu.cn/people/~cmm/saliency">7</a>].-->
+<!--</p>-->
+
+<!--<h2>Correction</h2>-->
+<!--<p>-->
+	 <!--There was a slight error in the plot of the MAE measure in <a href="./files/mae.png">Figure 6c</a>-->
+	<!--which, however, does not affect the overall result (<a href="./files/mae_corrected.png">Figure 6c_corrected</a>). We thanks Chuan Yang for pointing this out.-->
+<!--</p>-->
+
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=8914677;
+var sc_invisible=1;
+var sc_security="f1edf88a";
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="web analytics"
+href="http://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="http://c.statcounter.com/8914677/0/f1edf88a/1/"
+alt="web analytics"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+</body>
+</html>
