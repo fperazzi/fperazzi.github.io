@@ -12,7 +12,7 @@ authors: "F. Perazzi, A. Sorkine-Hornung, H. Zimmer, P. Kaufmann, O. Wang, S. Wa
 bibtex: panoramic.txt
 uri: panoramic.pdf
 arxiv:
-project: /projects/panoramic_video/index.html
+project: /projects/panoramic_video
 source:
 data: /projects/panoramic_video/data.html
 video: https://youtu.be/SHu8x2YaQJc

@@ -12,6 +12,6 @@ authors: "Federico Perazzi, Olga Sorkine-Hornung, Alexander Sorkine-Hornung"
 bibtex: saliency-fiedler.txt
 uri: saliency-fiedler.pdf
 arxiv:
-project: /projects/saliency_fiedler/index.html
+project: /projects/saliency_fiedler
 data:
 ---

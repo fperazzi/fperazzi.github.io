@@ -12,7 +12,7 @@ authors: "F. Perazzi*, A. Khoreva*, R. Benenson, B. Schiele, A. Sorkine-Hornung"
 bibtex: masktrack.txt
 uri: masktrack.pdf
 arxiv: https://arxiv.org/abs/1612.02646v1
-project: /projects/masktrack/index.html
+project: /projects/masktrack
 source:
 poster: masktrack-poster.pdf
 data:
