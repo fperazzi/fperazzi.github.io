@@ -1,0 +1,9 @@
+@inproceedings {wiced.20151074,
+booktitle = {Eurographics Workshop on Intelligent Cinematography and Editing},
+editor    = {W. Bares and M. Christie and R. Ronfard},
+title     = {{Efficient Salient Foreground Detection for Images and Video using Fiedler Vectors}},
+author    = {Perazzi, Federico and Sorkine-Hornung, Olga and Sorkine-Hornung, Alexander},
+year      = {2015},
+publisher = {The Eurographics Association},
+DOI       = {10.2312/wiced.20151074}
+}

@@ -1,0 +1,7 @@
+@InProceedings{Perazzi_2015_ICCV,
+	author    = {Perazzi, Federico and Wang, Oliver and Gross, Markus and Sorkine-Hornung, Alexander},
+	title     = {Fully Connected Object Proposals for Video Segmentation},
+	booktitle = {The IEEE International Conference on Computer Vision (ICCV)},
+	month     = {December},
+	year      = {2015}
+}

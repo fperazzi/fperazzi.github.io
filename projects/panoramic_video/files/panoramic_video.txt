@@ -1,0 +1,15 @@
+@article{PerazziSZKWWG15,
+  author    = {Federico Perazzi and
+               Alexander Sorkine{-}Hornung and
+               Henning Zimmer and
+               Peter Kaufmann and
+               Oliver Wang and
+               S. Watson and
+               Markus H. Gross},
+  title     = {Panoramic Video from Unstructured Camera Arrays},
+  journal   = {Comput. Graph. Forum},
+  volume    = {34},
+  number    = {2},
+  pages     = {57--68},
+  year      = {2015},
+}

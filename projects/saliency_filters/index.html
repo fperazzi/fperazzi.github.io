@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+<title>Saliency Filters - Saliency Detection, Saliency Map </title>
+<meta name="author" content="Federico Perazzi" >
+<meta name="keywords" content="Saliency Filters Maps Detection Salient">
+<meta name="description" content="CVPR Saliency Filters">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="expires" content="0">
+
+<style type="text/css">
+
+	a:link       { color: #0000C0; text-decoration=none }
+	a:visited    { color: #0000C0; text-decoration=none }
+	a:active     { color: #0000FF; text-decoration=none }
+	a:hover      { color: #0080FF; text-decoration=none }
+
+	body {
+				font-family: arial, helvetica, sans-serif; font-size: 11pt;
+				margin: 80px;
+				margin-top:    70px;
+				margin-bottom: 70px;
+	}
+
+	h1 { font-size: 200%; margin-top 20px;margin-bottom: 20px; }
+	h2 { font-size: 150%;margin-top: 60px;margin-bottom: 10px;}
+	h3 { font-size: 100%; margin-top: 20px; margin-bottom: 10px;}
+	p  { margin-top: 0em; margin-bottom: 5px  }
+
+</style>
+</head>
+
+<body>
+<div align="left" >
+  <h2 align="center"><strong>Saliency Filters: Contrast Based Filtering for Salient Region Detection</strong></h2>
+	<p align="center">
+		<sup>1</sup><a href="https://fperazzi.github.io"/>Federico Perazzi</a>&nbsp;&nbsp;
+		<sup>2</sup><a href="http://www.stanford.edu/~philkr">Philipp Kr&auml;henb&uuml;l</a>&nbsp;&nbsp;
+		<sup>1</sup><a href="http://www.cs.huji.ac.il/~yaelpri">Yael Pritch</a>&nbsp;&nbsp;
+		<sup>1</sup><a href="http://www.ahornung.net">Alexander Hornung</a>&nbsp;&nbsp;
+	</p>
+  <p align="center"><sup>1</sup>Disney Research Zurich<sup> &nbsp;&nbsp;&nbsp;&nbsp;2</sup>Stanford University&nbsp;&nbsp;&nbsp;&nbsp;</p>
+	</br></br>
+  <p align="center"><img src="./files/teaser_01.png" alt="" width="820"/></p>
+  <p align="center"> Illustration of the main phases of our algorithm. The input image is first abstracted into perceptually homogeneous elements. Each element is represented by the mean color of the pixels belonging to it. We then define two contrast measures per element based on the uniqueness and spatial distribution of elements. Finally, a saliency value is assigned to each pixel.
+</br>
+
+
+  <h2>Abstract</h2>
+	<p align="justify">
+Saliency estimation has become a valuable tool in image processing. Yet, existing approaches exhibit considerable variation in methodology, and it is often difficult to attribute improvements in result quality to specific algorithm properties. In this paper we reconsider some of the design choices of previous methods and propose a conceptually clear and intuitive algorithm for contrast-based saliency estimation. Our algorithm consists of four basic steps. First, our method decomposes a given image into compact, perceptually homogeneous elements that abstract unnecessary detail. Based on this abstraction we compute two measures of contrast that rate the uniqueness and the spatial distribution of these elements. From the element contrast we then derive a saliency measure that produces a pixel-accurate saliency map which uniformly covers the objects of interest and consistently separates fore- and background.
+We show that the complete contrast and saliency estimation can be formulated in a unified way using high- dimensional Gaussian filters. This contributes to the conceptual simplicity of our method and lends itself to a highly efficient implementation with linear complexity. In a detailed experimental evaluation we analyze the contribution of each individual feature and show that our method outperforms all state-of-the-art approaches. </p>
+<p>
+
+	</br>
+  <p align="center"><img src="./files/teaser_02.png" alt="" width="600"/></p>
+	<p align="center"> Left to right: input images, abstraction into homogeneous elements, our saliency computation, ground truth labeling.</p>
+
+	</br>
+
+<h2>Introduction</h2>
+
+<p align="justify">
+In this work we reconsider the set of fundamentally relevant contrast measures and their definition in terms of image content. Our method is based on the observation that an image can be decomposed into basic, structurally representative elements that abstract away unnecessary detail, and at the same time allow for a very clear and intuitive definition of contrast-based saliency.
+Our first main contribution therefore is a concept and algorithm to decompose an image into perceptually homogeneous elements and to derive a saliency estimate from two well-defined contrast measures based on the uniqueness and spatial distribution of those elements. Both, local as well as the global contrast are handled by these measures in a unified way.
+Central to the contrast and saliency computation is our second main contribution; we show that all involved operators can be formulated within a single high-dimensional Gaussian filtering framework. Thanks to this formulation, we achieve a highly efficient implementation with linear
+complexity. The same formulation also provides a clear link between the element-based contrast estimation and the actual assignment of saliency values to all image pixels.
+As we demonstrate in our experimental evaluation, each of our individual measures already performs close to or even better than existing approaches, and our combined method currently achieves the best ranking results on the public benchmark found here:.
+</p>
+
+
+<h2>Citation - BibTeX</h2>
+<p align="justify">
+<p>Federico Perazzi, Philipp Kr&auml;henb&uuml;l, Yael Pritch, Alexander Hornung. Saliency Filters: Contrast Based Filtering for Salient Region Detection. IEEE CVPR, Providence, Rhode Island, USA, June 16-21, 2012. [ <a href="./files/saliency_filters_cvpr_2012.pdf">Pdf 7.3MB</a> ] [ <a href="./files/SF_maps.zip">Data</a> ] [ <a href="./files/saliencyfilters.zip">Code</a> ][ <a href="./files/saliency_filters_poster_cvpr_2012.pdf">Poster</a> ] [ <a href="./files/saliency_filters_cvpr_2012.txt">BibTeX</a> ]</p>
+
+
+<h2>Supplementary Material</h2>
+<p align="justify">
+The dataset of images, including sources, ground-truth segmentations as well as several others saliency maps from other state-of-the-art methods can be found in [<a href="http://ivrgwww.epfl.ch/supplementary_material/RK_CVPR09/index.html">2</a>] and [<a href="http://cg.cs.tsinghua.edu.cn/people/~cmm/saliency">7</a>].
+</p>
+
+<h2>Correction</h2>
+<p>
+	 There was a slight error in the plot of the MAE measure in <a href="./files/mae.png">Figure 6c</a>
+	which, however, does not affect the overall result (<a href="./files/mae_corrected.png">Figure 6c_corrected</a>). We thanks Chuan Yang for pointing this out.
+</p>
+
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=8914677;
+var sc_invisible=1;
+var sc_security="f1edf88a";
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="web analytics"
+href="http://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="http://c.statcounter.com/8914677/0/f1edf88a/1/"
+alt="web analytics"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+
+<title>Bilateral Space Video Segmentation</title>
+<meta name="author" content="Federico Perazzi" >
+<meta name="keywords" content="Segmentation Video Object Bilateral Space bvs">
+<meta name="description" content="CVPR 2016 Video Object Segmentation">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="expires" content="0">
+
+<style type="text/css">
+
+	a:link       { color: #0000C0; text-decoration=none }
+	a:visited    { color: #0000C0; text-decoration=none }
+	a:active     { color: #0000FF; text-decoration=none }
+	a:hover      { color: #0080FF; text-decoration=none }
+
+	body {
+				font-family: arial, helvetica, sans-serif; font-size: 11pt;
+				margin: 80px;
+				margin-top:    70px;
+				margin-bottom: 70px;
+	}
+
+	h1 { font-size: 200%; margin-top 20px;margin-bottom: 20px; }
+	h2 { font-size: 150%;margin-top: 60px;margin-bottom: 10px;}
+	h3 { font-size: 100%; margin-top: 20px; margin-bottom: 10px;}
+	p  { margin-top: 0em; margin-bottom: 5px  }
+
+</style>
+</head>
+
+<body>
+<div align="left" >
+  <h2 align="center"><strong>Bilateral Space Video Segmentation</strong></h2>
+	<p align="center">
+		<sup>1</sup><a href="http://www.nitschi.ch/"/>Nicolas M&aumlrki</a>&nbsp;&nbsp;
+		<sup>1,2</sup><a href="https://fperazzi.github.io"/>Federico Perazzi</a>&nbsp;&nbsp;
+		<sup>3</sup><a href="http://www.oliverwang.info">Oliver Wang</a>&nbsp;&nbsp;
+		<sup>2</sup><a href="http://www.ahornung.net">Alexander Sorkine-Hornung</a>&nbsp;&nbsp;
+	</p>
+	<p align="center"><sup>1</sup>ETH Zurich&nbsp;&nbsp;&nbsp;&nbsp;<sup>2</sup>Disney Research Zurich&nbsp;&nbsp;&nbsp;&nbsp;<sup>3</sup>Adobe Systems Inc.&nbsp;&nbsp;&nbsp;&nbsp;</p>
+	</br></br>
+	<p align="center"><img src="./files/bvs_teaser.jpg" alt="" width="600"/></p></br>
+	<p align="left">
+Figure 1. Example results of our bilateral space video segmentation which
+automatically propagates a user provided mask on the first frame (left column)
+through the complete video (remaining columns). Thanks to the efficiency of our
+method, errors in the later frames can be easily fixed in an interactive
+manner.
+	</p>
+  <h2>Abstract</h2>
+	<p align="justify">
+In this work, we propose a novel approach to video segmentation that operates
+in bilateral space. We design a new energy on the vertices of a regularly
+sampled spatio-temporal bilateral grid, which can be solved efficiently using a
+standard graph cut label assignment. Using a bilateral formulation, the energy
+that we minimize implicitly approximates long-range, spatio-temporal
+connections between pixels while still containing only a small number of
+variables and only local graph edges. We compare to a number of recent methods,
+and show that our approach achieves state-of-the-art results on multiple
+benchmarks in a fraction of the runtime. Furthermore, our method scales
+linearly with image size, allowing for interactive feedback on real-world high
+resolution video.
+</p>
+</br>
+	</br>
+	<p align="center"><img src="./files/bvs_results.jpg" alt="" width="700"/></p>
+	<p align="left">
+		Figure 6. Qualitative video segmentation results from three sequences of DAVIS
+		[26] (horsejump, stroller and soapbox). The segmentation is computed
+		non-interactively, given the first frame as initialization. Our method
+		demonstrates robustness to challenging scenarios such as complex objects,
+		fast-motion, and occlusions.
+</p>
+
+	</br>
+
+<h2>Introduction</h2>
+<p align="justify">
+A crucial aspect of semi-automatic video segmentation methods is
+responsiveness. A user expects instant feedback, and any computation delays
+present significant challenges to the adoption of these technologies. This is
+one of the key reasons that segmentation related tasks, such as rotoscoping,
+form the bulk of manual labor, and therefore associated costs, of video
+effects. In this work, we present a highly efficient method for user-guided
+video segmentation that is able provide iterative feedback in a fraction of the
+time of previous approaches, while still generating high quality results in
+semi-supervised applications, as demonstrated on multiple benchmarks.  We
+accomplish this by performing the segmentation in “bilateral space”, which is a
+high dimensional feature space, originally proposed for accelerated bilateral
+filtering, and recently extended to computing depth from stereo
+triangulation. We describe a novel energy on a “bilateral grid”, a
+regular lattice in bilateral space, and infer labels for these vertices by
+minimizing an energy using graph cuts. Processing on the bilateral grid has
+several advantages over other approaches. First, the regular and
+data-independent structure allows for a more efficient mapping from image to
+bilateral space (and vice versa) than super-pixels or k-means clustering
+approaches. Second, it allows for flexible interpolation schemes that lead to
+soft assignments of pixels to multiple intermediate variables. And finally, a
+bilateral representation allows us to infer labels on a simple, locally
+connected graph, while still enforcing large spatio-temporal neighborhood
+regularization, which would be intractable to solve directly. We show that the
+combination of these advantages significantly improves segmentation quality,
+and importantly, allows us to segment video data, generating temporally
+consistent results with robustness to object and camera motion.
+</p>
+
+<br>
+<br>
+<p>
+<p align="justify">
+
+<font size="4" color="red"><strong>Update</strong></font>: [ <a href="./files/BVS_results.zip">Data</a> ] available for download now includes results from <a href="/projects/davis">DAVIS</a>, <a href="http://web.engr.oregonstate.edu/~lif/SegTrack2/dataset.html">SegTrackv2</a> and  <a href="http://vision.cs.utexas.edu/projects/videoseg/data_download_register.html">YouTubeObjects</a> dataset.
+</p>
+
+<h2>Citation - BibTeX</h2>
+<p align="justify">
+	<b>Bilateral Space Video Segmentation</b><br/>
+	Nicolas M&aumlrki, Federico Perazzi, Oliver Wang, Alexander Sorkine-Hornung<br/>
+	<i>CVPR 2016, Las Vegas, USA</i>.<br/>
+	[ <a href="./files/bvs.pdf">PDF</a> ]
+	[ <a href="./files/BVS_results.zip">Data</a> ]
+	[ <a href="https://github.com/owang/BilateralVideoSegmentation">Code</a> ]
+	[ <a href="./files/bvs_poster_cvpr_2016.pdf">Poster</a> ]
+	[ <a href="./files/bvs.txt">BibTeX</a> ]
+</p>
+
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=8914677;
+var sc_invisible=1;
+var sc_security="f1edf88a";
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="web analytics"
+href="http://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="http://c.statcounter.com/8914677/0/f1edf88a/1/"
+alt="web analytics"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+</body>
+</html>

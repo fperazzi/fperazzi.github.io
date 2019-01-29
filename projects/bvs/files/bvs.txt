@@ -1,0 +1,9 @@
+@inproceedings{Maerki_CVPR_2016,
+  author    = {Nicolas Maerki and
+               Federico Perazzi and
+               Oliver Wang and
+               Alexander Sorkine-Hornung},
+  title     = {Bilateral Space Video Segmentation},
+  booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year      = {2016}
+}

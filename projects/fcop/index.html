@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+<title>Fully Connected Object Proposals For Video Segmentation</title>
+<meta name="author" content="Federico Perazzi" >
+<meta name="keywords" content="Segmentation Video Object Proposals FCOP fcop">
+<meta name="description" content="ICCV 2015 Video Object Segmentation">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="expires" content="0">
+
+<style type="text/css">
+
+	a:link       { color: #0000C0; text-decoration=none }
+	a:visited    { color: #0000C0; text-decoration=none }
+	a:active     { color: #0000FF; text-decoration=none }
+	a:hover      { color: #0080FF; text-decoration=none }
+
+	body {
+				font-family: arial, helvetica, sans-serif; font-size: 11pt;
+				margin: 80px;
+				margin-top:    70px;
+				margin-bottom: 70px;
+	}
+
+	h1 { font-size: 200%; margin-top 20px;margin-bottom: 20px; }
+	h2 { font-size: 150%;margin-top: 60px;margin-bottom: 10px;}
+	h3 { font-size: 100%; margin-top: 20px; margin-bottom: 10px;}
+	p  { margin-top: 0em; margin-bottom: 5px  }
+
+</style>
+</head>
+
+<body>
+<div align="left" >
+  <h2 align="center"><strong>Fully Connected Object Proposals For Video Segmentation</strong></h2>
+	<p align="center">
+		<sup>1,2</sup><a href="https://fperazzi.github.io"/>Federico Perazzi</a>&nbsp;&nbsp;
+		<sup>2</sup><a href="http://www.oliverwang.info">Oliver Wang</a>&nbsp;&nbsp;
+		<sup>1,2</sup><a href="http://www.disneyresearch.com/people/markus-gross">Markus Gross</a>&nbsp;&nbsp;
+		<sup>2</sup><a href="http://www.ahornung.net">Alexander Sorkine-Hornung</a>&nbsp;&nbsp;
+	</p>
+	<p align="center"><sup>1</sup>ETH Zurich&nbsp;&nbsp;&nbsp;&nbsp;<sup>2</sup>Disney Research Zurich&nbsp;&nbsp;&nbsp;&nbsp;</p>
+	</br></br>
+	<p align="center"><img src="./files/fcop_teaser.jpg" alt="" width="600"/></p></br>
+	<p align="left">
+	Figure 1. Example segmentations using our approach on three sequences of the
+	<i>Freiburg-Berkeley Motion Segmentation Dataset</i>. Top to bottom: we
+	demonstrate robustness to challenging situations typical of unconstrained
+	videos such as fast-motion and motion blur, color ambiguities between fore-
+	and background, and partial occlusions.
+	</p>
+  <h2>Abstract</h2>
+	<p align="justify">
+We present a novel approach to video segmentation using multiple object
+proposals. The problem is formulated as a minimization of a novel energy
+function defined over a fully connected graph of object proposals. Our model
+combines appearance with long-range point tracks, which is key to ensure
+robustness with respect to fast motion and occlusions over longer video
+sequences. As opposed to previous approaches based on object proposals, we do
+not seek the best per-frame object hypotheses to perform the segmentation.
+Instead, we combine multiple, potentially imperfect proposals to improve
+overall segmentation accuracy and ensure robustness to outliers. Overall, the
+basic algorithm consists of three steps. First, we generate a very large number
+of object proposals for each video frame using existing techniques.
+Next, we perform an SVM-based pruning step to retain only high
+quality proposals with sufficiently discriminative power. Finally, we
+determine the fore- and background classification by solving for the maximum a
+posteriori of a fully connected conditional random field, defined using our
+novel energy function. Experimental results on a well established dataset
+demonstrate that our method compares favorably to several recent
+state-of-the-art approaches.
+</p>
+</br>
+	</br>
+	<p align="center"><img src="./files/fcop_results.jpg" alt="" width="700"/></p>
+	<p align="left">
+Figure 2. Top to bottom, left to right: qualitative video object segmentation results on six sequences (horses05, farm01, cats01, cars4,
+marple8 and people5) from the FBMS dataset. Our method demonstrates reasonable segmentation quality for challenging cases, e.g.,
+non-rigid motion and considerable appearance changes (horse05, cats01). The rich set of features of the SVM and the pairwise potentials
+of the CRF make our method robust to cluttered background (farm1, cars4), while the fully connected graph on which we perform
+inference provides robustness to partial and full occlusions (marple8). The aggregation of object proposals is also effective for complex,
+multi-colored objects (people05).
+</p>
+
+	</br>
+
+<h2>Introduction</h2>
+
+<p align="justify">
+We propose an efficient alternative approach which exploits a fully connected
+spatiotemporal graph built over ob- ject proposals. We map our similarity term
+into a Euclidian space, which is computationally efficient to optimize and well
+suited for modeling long-range connections. The fully connected nature of the
+graph implies information exchange between both spatially and temporally
+distant object proposals, which in turn enables our method to be robust to the
+difficult cases of fast frame-to-frame motion and object occlusions. We
+additionally propose an energy term that incorporates sparse but confident long
+range feature tracks, in order to ensure similar temporal labeling of objects.
+While previous approaches are constrained to the selection of one proposal per
+frame, our formulation enables the grouping of multiple overlapping proposals
+in the same frame, yielding robustness to outliers and incorrect proposal
+boundaries.
+Given as input a set of object proposals and a few annotated foreground
+proposals, our algorithm consists of three steps. Initially, a rough
+classification and subsampling of the data is performed using a self-trained
+Support Vector Machine (SVM) classifier in order to reduce the size of the
+proposal space while preserving a large pool of candidate foreground proposals.
+Next, maximum a posteriori (MAP) inference is performed on a fully connected
+conditional random field (CRF) to determine the final labeling of the candidate
+proposals. Finally, each labeled proposal casts a vote to all pixels that it
+overlaps. The aggregate result yields the final foreground-background
+segmentation.  We compare our results with an existing benchmark dataset and
+show that our method outperforms several state-of-the-art approaches.
+</p>
+
+
+<h2>Citation - BibTeX</h2>
+<p align="justify">
+<p>Federico Perazzi, Oliver Wang, Markus Gross, Alexander Sorkine-Hornung. <i>Fully Connected Object Proposals for Video Segmentation</i>. <i>IEEE ICCV</i> , Santiago Chile, 11-18 December 2015.
+[ <a href="./files/fcop.pdf">Pdf 3.6MB</a> ]
+[ <a href="./files/fcop_poster.pdf">Poster</a> ]
+[ <a href="./files/fcop_supplementary.pdf">Supplementary</a> ]
+[ <a href="./files/fcop.txt">BibTeX</a> ]</p>
+<!--<a href="./files/fcop.pdf">Poster</a>-->
+
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=8914677;
+var sc_invisible=1;
+var sc_security="f1edf88a";
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="web analytics"
+href="http://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="http://c.statcounter.com/8914677/0/f1edf88a/1/"
+alt="web analytics"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+</body>
+</html>

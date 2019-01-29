@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+
+<title>Learning Video Object Segmentation from Static Images</title>
+<meta name="author" content="Federico Perazzi" >
+<meta name="keywords" content="Segmentation Video Object MaskTrack ConvNet Guided">
+<meta name="description" content="Video Object Segmentation">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="expires" content="0">
+
+<style type="text/css">
+
+	a:link       { color: #0000C0; text-decoration=none }
+	a:visited    { color: #0000C0; text-decoration=none }
+	a:active     { color: #0000FF; text-decoration=none }
+	a:hover      { color: #0080FF; text-decoration=none }
+
+	body {
+				font-family: arial, helvetica, sans-serif; font-size: 11pt;
+				margin: 80px;
+				margin-top:    70px;
+				margin-bottom: 70px;
+	}
+
+	h1 { font-size: 200%; margin-top 20px;margin-bottom: 20px; }
+	h2 { font-size: 150%;margin-top: 60px;margin-bottom: 10px;}
+	h3 { font-size: 100%; margin-top: 20px; margin-bottom: 10px;}
+	p  { margin-top: 0em; margin-bottom: 5px  }
+
+</style>
+</head>
+
+<body>
+<div align="left" >
+  <h2 align="center"><strong>Learning Video Object Segmentation from Static Images</strong></h2>
+	<p align="center">
+		<sup>1,2</sup><a href="https://fperazzi.github.io"/>Federico Perazzi</a>*&nbsp;&nbsp;
+		<sup>3</sup><a href="https://www.mpi-inf.mpg.de/departments/computer-vision-and-multimodal-computing/people/anna-khoreva/"/>Anna Khoreva</a>*&nbsp;&nbsp;
+		<sup>3</sup><a href="http://rodrigob.github.io/">Rodrigo Benenson</a>&nbsp;&nbsp;
+		<sup>3</sup><a href="https://www.mpi-inf.mpg.de/departments/computer-vision-and-multimodal-computing/people/bernt-schiele/">Bernt Schiele</a>&nbsp;&nbsp;
+		<sup>1</sup><a href="http://www.ahornung.net">Alexander Sorkine-Hornung</a>&nbsp;&nbsp;
+	</p>
+	<p align="center"><sup>1</sup>ETH Zurich&nbsp;&nbsp;&nbsp;&nbsp;<sup>2</sup>Disney Research Zurich&nbsp;&nbsp;&nbsp;&nbsp;<sup>3</sup>MPI Saarbrücken&nbsp;&nbsp;&nbsp;&nbsp;</p>
+	</br></br>
+	<p align="center"><img src="./files/masktrack_teaser.jpg" alt="" width="600"/></p></br>
+	<p align="center">
+Figure 1: Given a rough mask estimate from the previous frame t − 1 , we train
+a convnet to provide a refined mask output for the current frame t.
+	</p>
+  <h2>Abstract</h2>
+	<p align="justify">
+Inspired by recent advances of deep learning in instance segmentation and
+object tracking, we introduce video object segmentation problem as a concept of
+guided instance segmentation. Our model proceeds on a per-frame basis, guided
+by the output of the previous frame towards the object of interest in the next
+frame. We demonstrate that highly accurate object segmentation in videos can be
+enabled by using a convnet trained with static images only. The key ingredient
+of our approach is a combination of offline and online learning strategies,
+where the former serves to produce a refined mask from the previous’ frame
+estimate and the latter allows to capture the appearance of the specific object
+instance. Our method can handle different types of input annotations: bounding
+boxes and segments, as well as incorporate multiple annotated frames, making
+the system suitable for diverse applications. We obtain competitive results on
+three different datasets, independently from the type of input annotation.
+</p>
+</br>
+	</br>
+	<div align="center">
+	<!--<iframe width="560" height="315" src="https://www.youtube.com/embed/G8RbuKI_784?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>-->
+	<video style="width:640;height:auto" muted loop controls>
+		<source src="files/masktrack.mov" type="video/mp4">
+	</video>
+	</div>
+	</br>
+	<p align="center">
+	Qualitative results and comparisons with semi-supervised state-of-the-art approaches on the <a href="/projects/davis">DAVIS</a> dataset.
+</p>
+
+	</br>
+
+<h2>Introduction</h2>
+<p align="justify">
+In this work we demonstrate that highly accurate video object segmentation can
+be enabled using a convnet trained with static images only.  We show that a
+convnet designed for semantic image segmentation can be utilized to perform
+per-frame instance segmentation, i.e., segmentation of generic objects while
+distinguishing different instances of the same class. For each new video frame
+the network is guided towards the object of interest by feeding in the
+previous’ frame mask estimate. We therefore refer to our approach as guided
+instance segmentation. To the best of our knowledge, it represents the first
+fully trained approach to video object segmentation. Our system is efficient
+due to its feed-forward architecture and can generate high quality results in a
+single pass over the video, without the need for considering more than one
+frame at a time. This is in stark contrast to many other video segmentation
+approaches, which usually require global connections over multiple frames or
+even the whole video sequence in order to achieve coherent results. The method
+can handle different types of annotations and in the extreme case, even simple
+bounding boxes as input are sufficient, achieving competitive results,
+rendering our method flexible with respect to various practical applications.
+Key to the video segmentation quality of our approach is a combined offline /
+online learning strategy. In the offline phase, we use deformation and
+coarsening on the image masks in order to train the network to produce accurate
+output masks from their rough estimates. An online training phase extends ideas
+from previous works on object tracking to video segmentation and
+enables the method to be easily optimized with respect to an object of interest
+in a novel input video.
+</p>
+<h2>DAVIS Evaluation</h2>
+<p align="center"><img src="./files/masktrack_eval.jpg" alt="" width="800"/></p></br>
+<p align="justify">
+Overall results of region similarity (J), contour accuracy (F) and temporal
+(in-)stability (T) for each of the tested algorithms. For rows with an upward
+pointing arrow higher numbers are better (e.g., mean), and vice versa for rows
+with downward pointing arrows (e.g., decay, instability). Our approach <b>MSK</b> <i>(MaskTrack+Flow+CRF)</i> achieves a score of 80.3 mIoU.
+</p>
+<br/>
+<!-- <p> -->
+<!-- Davis results: -->
+<!-- [ <a href="./files/masktrack_flow_crf_davis_eval.h5">Evaluation</a> ] -->
+<!-- [ MaskTrack ] -->
+<!-- </p> -->
+
+<h2>Results and Source Code</h2>
+Segmentation Masks:
+[ <a href="https://www.dropbox.com/s/067t4js0dvvyd1z/DAVIS.zip">DAVIS</a> ]
+[ <a href="https://www.dropbox.com/s/7i2lzbsg42106z1/SegTrackV2.zip">SegTrackV2</a> ]
+[ <a href="https://www.dropbox.com/s/ns8kadztm2pqi7n/YouTube-Objects.zip">YoutTube-Objects</a> ]
+<br><br>
+Source Code (Matlab) and Models:
+[ <a href="https://www.dropbox.com/s/c625r4cldc3ouhm/offline_training.zip">Offline Training</a> ]
+[ <a href="https://www.dropbox.com/s/yu9yljus2n3rzp2/online_training.zip">Online Training</a> ]
+
+
+<h2>Citation - BibTeX</h2>
+<p align="justify">
+	<b>Learning Video Object Segmentation from Static Images</b><br/>
+	F. Perazzi*, A. Khoreva*, R. Benenson, B. Schiele, A. Sorkine-Hornung<br/>
+	<i>CVPR 2017, Honolulu, USA</i>.<br/>
+	[ <a href="./files/masktrack.pdf">PDF</a> ]
+	[ <a href="https://arxiv.org/abs/1612.02646v1">ArXiv</a> ]
+	[ <a href="./files/masktrack.txt">BibTeX</a> ]
+</p>
+
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=8914677;
+var sc_invisible=1;
+var sc_security="f1edf88a";
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="web analytics"
+href="http://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="http://c.statcounter.com/8914677/0/f1edf88a/1/"
+alt="web analytics"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+</body>
+</html>
