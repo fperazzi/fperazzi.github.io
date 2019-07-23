@@ -8,7 +8,7 @@ city:
 state:
 teaser:
 thumbnail: 'cg2real.png'
-authors: ICCV 2019 (<strong>oral</strong>), Seoul, South Korea
+authors: ICCV 2019, Seoul, South Korea
 bibtex:
 uri:
 arxiv:
