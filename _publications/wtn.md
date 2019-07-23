@@ -4,7 +4,7 @@ collection: publications
 permalink: /publication/wtn
 date: 2019-10-27
 venue:
-city:
+city: coming soon!
 state:
 teaser:
 thumbnail: 'wtn.png'

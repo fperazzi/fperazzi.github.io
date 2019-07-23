@@ -4,7 +4,7 @@ collection: publications
 permalink: /publication/cg2real
 date: 2019-10-26
 venue:
-city:
+city: coming soon!
 state:
 teaser:
 thumbnail: 'cg2real.png'
