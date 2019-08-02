@@ -3,7 +3,7 @@ title: "A Fully Progressive Approach to Single-Image Super-Resolution"
 collection: publications
 permalink: /publication/prosr
 date: 2018-03-24
-venue: "CVPR NTIRE Workshop"
+venue: "CVPRW"
 city: "Salt Lake City"
 state: "Utah"
 thumbnail: "prosr.png"
