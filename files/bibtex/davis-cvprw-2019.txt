@@ -1,0 +1,6 @@
+@article{Caelles_arXiv_2019,
+  author = {Sergi Caelles, Jordi Pont-Tuset, Federico Perazzi, Alberto Montes, Kevis-Kokitsi Maninis and Luc Van Gool},
+  title = {The 2019 DAVIS Challenge on VOS: Unsupervised Multi-Object Segmentation},
+  journal = {arXiv:1905.00737},
+  year = {2019}
+}
