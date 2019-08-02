@@ -14,5 +14,5 @@ uri: davis-cvprw-2019.pdf
 arxiv: https://arxiv.org/abs/1905.00737
 project: https://davischallenge.org/challenge2019/index.html
 source: https://github.com/davisvideochallenge
-data: https://davischallenge.org/davis2017/code.htm
+data: https://davischallenge.org/davis2017/code.html
 ---
