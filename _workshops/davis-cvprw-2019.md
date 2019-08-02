@@ -8,7 +8,7 @@ city: 'Long Beach'
 state: 'California'
 teaser:
 thumbnail: 'davis-cvprw-2019.png'
-authors: "S. Caelles, J. Pont-Tuset, F. Perazzi, A. Montes, K.-K. Maninis, L. Van Gool
+authors: "S. Caelles, J. Pont-Tuset, F. Perazzi, A. Montes, K.-K. Maninis, L. Van Gool"
 bibtex: davis-cvprw-2019.txt
 uri: davis-cvprw-2019.pdf
 arxiv: https://arxiv.org/abs/1905.00737
