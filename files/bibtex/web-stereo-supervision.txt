@@ -1,0 +1,9 @@
+@inproceedings{Wang3DV2019,
+  author    = {Chaoyang Wang and
+               Simon Lucey and
+               Federico Perazzi and
+               Oliver Wang},
+  title     = {Web Stereo Video Supervision for Depth Prediction from Dynamic Scenes},
+  booktitle = {Proc.\ of International Conference on 3D Vision (3DV)},
+  year      = {2019}
+}
