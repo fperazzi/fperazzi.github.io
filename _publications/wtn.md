@@ -1,5 +1,5 @@
 ---
-title: "Scalable Object Detection with Auto-Encoder Weight Transfer Network"
+title: "Scaling Object Detection by Transferring Classification Weights"
 collection: publications
 permalink: /publication/wtn
 date: 2019-10-27
