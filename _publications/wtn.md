@@ -8,7 +8,7 @@ city: Seoul
 state: "South Korea"
 teaser:
 thumbnail: "wtn.png"
-authors: "J. Kuen, F. Perazzi, Z. Lin, J. Zhang, Y. Tan"
+authors: "Jason Kuen, Federico Perazzi, Zhe Lin, Jianming Zhang, Yap-Pen Tan"
 bibtex:
 uri: wtn.pdf
 arxiv:
