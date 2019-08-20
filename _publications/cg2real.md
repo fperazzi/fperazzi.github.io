@@ -8,8 +8,8 @@ city: Seoul
 state: "South Korea"
 teaser:
 thumbnail: 'cg2real.png'
-authors:
-bibtex: "Sai Bi, Kalyan Sunkavalli, Federico Perazzi, Eli Shechtman, Vladimir Kim, Ravi Ramamoorthi"
+authors: "Sai Bi, Kalyan Sunkavalli, Federico Perazzi, Eli Shechtman, Vladimir Kim, Ravi Ramamoorthi"
+bibtex:
 uri: cg2real.pdf
 arxiv:
 project:
