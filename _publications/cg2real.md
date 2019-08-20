@@ -3,7 +3,7 @@ title: "Synthetic to Real Translation Via Explicit Image Disentanglement"
 collection: publications
 permalink: /publication/cg2real
 date: 2019-10-27
-venue: ICCV 2019 (<strong>oral</strong>), Seoul, South Korea
+venue: ICCV 2019, Seoul, South Korea
 city: Seoul
 state: "South Korea"
 teaser:
