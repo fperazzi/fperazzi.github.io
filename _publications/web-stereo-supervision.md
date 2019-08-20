@@ -7,7 +7,7 @@ venue: "3DV"
 city: "Quebec City"
 state: "Canada"
 thumbnail: "web-stereo-supervision.png"
-authors: "C. Wang, S. Lucey, F. Perazzi, O. Wang"
+authors: "Chaoyang Wang, Sim Lucey, Federico Perazzi, Oliver Wang"
 uri: web-stereo-supervision.pdf
 arxiv: https://arxiv.org/abs/1904.11112
 bibtex: web-stereo-supervision.txt
