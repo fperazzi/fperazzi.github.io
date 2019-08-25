@@ -3,7 +3,7 @@ title: "Scaling Object Detection by Transferring Classification Weights"
 collection: publications
 permalink: /publication/wtn
 date: 2019-10-27
-venue: ICCV 2019 (<strong>oral</strong>)
+venue: ICCV (<strong>oral</strong>)
 city: Seoul
 state: "South Korea"
 teaser:
