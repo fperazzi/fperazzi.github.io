@@ -12,7 +12,7 @@ authors: "Jason Kuen, Federico Perazzi, Zhe Lin, Jianming Zhang, Yap-Pen Tan"
 bibtex:
 uri: wtn.pdf
 arxiv: https://arxiv.org/abs/1909.06804
-project: https://github.com/xternalz/AE-WTN
+source: https://github.com/xternalz/AE-WTN
 poster:
 data:
 ---
