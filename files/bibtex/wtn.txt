@@ -1,0 +1,6 @@
+@inproceedings{kuen2019scaling,
+   title = {Scaling Object Detection by Transferring Classification Weights},
+   author = {Kuen, Jason and Perazzi, Federico and Lin, Zhe and Zhang, Jianming and Tan, Yap-Peng},
+   booktitle = {ICCV},
+   year = {2019}
+}

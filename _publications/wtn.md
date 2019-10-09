@@ -11,8 +11,8 @@ thumbnail: "wtn.png"
 authors: "Jason Kuen, Federico Perazzi, Zhe Lin, Jianming Zhang, Yap-Pen Tan"
 bibtex:
 uri: wtn.pdf
-arxiv:
-project:
+arxiv: https://arxiv.org/abs/1909.06804
+project: https://github.com/xternalz/AE-WTN
 poster:
 data:
 ---
