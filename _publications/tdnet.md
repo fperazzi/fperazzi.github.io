@@ -7,7 +7,7 @@ city: Seattle
 state: Washington
 teaser:
 thumbnail: "tdnet.png"
-authors: "Ping Hu, Fabian Caba Heilbron, Oliver Wang, Stan Sclaroff, Federico Perazzi"
+authors: "Ping Hu, Fabian Caba Heilbron, Oliver Wang, Zhe Lin, Stan Sclaroff, Federico Perazzi"
 bibtex:
 uri:
 arxiv:
