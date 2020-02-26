@@ -6,7 +6,7 @@ venue: CVPR
 city: Seattle
 state: Washington
 teaser:
-thumbnail: 'tdnet.png'
+thumbnail: "tdnet.png"
 authors: "Ping Hu, Fabian Caba Helibron, Oliver Wang, Stan Sclaroff, Federico Perazzi"
 bibtex:
 uri:
