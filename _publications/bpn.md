@@ -5,7 +5,7 @@ permalink: /publication/bpn
 date: 2020-12-09
 venue: CVPR
 city: Seattle
-state: WA
+state: Washington
 teaser:
 thumbnail: 'bpn.png'
 authors: "Zhihao Xia, Federico Perazzi, Michael Gharbi, Kalyan Sunkavalli, Ayan Chakrabarti"

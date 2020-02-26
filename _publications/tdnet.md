@@ -1,10 +1,10 @@
 ---
-title: "Basis Prediction Networks for Effective Burst Denoising with Large Kernels"
+title: "TDNet: A Temporally Distributed Network for Fast Video Segmentation"
 collection: publications
-date: 2020-12-10
+date: 2020-12-02
 venue: CVPR
 city: Seattle
-state: WA
+state: Washington
 teaser:
 thumbnail: 'tdnet.png'
 authors: "Ping Hu, Fabian Caba Helibron, Oliver Wang, Stan Sclaroff, Federico Perazzi"
@@ -15,3 +15,4 @@ project:
 poster:
 data:
 ---
+
