@@ -9,7 +9,7 @@ teaser:
 thumbnail: "tdnet.png"
 authors: "Ping Hu, Fabian Caba Heilbron, Oliver Wang, Zhe Lin, Stan Sclaroff, Federico Perazzi"
 bibtex:
-uri:
+uri: tdnet_cvpr2020.pdf
 arxiv:
 project:
 poster:
