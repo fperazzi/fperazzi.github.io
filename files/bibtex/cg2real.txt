@@ -1,0 +1,6 @@
+@InProceedings{Bi_2019
+  author    = {Bi, Sai and Sunkavalli, Kalyan and Perazzi, Federico and Shechtman, Eli and Kim, Vladimir and Ramamoorthi, Ravi},
+  title     = {Deep CG2Real: Synthetic-to-Real Translation via Image Disentanglement},
+  booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition},
+	year      = {2020}
+}

@@ -9,9 +9,9 @@ state: "South Korea"
 teaser:
 thumbnail: 'cg2real.png'
 authors: "Sai Bi, Kalyan Sunkavalli, Federico Perazzi, Eli Shechtman, Vladimir Kim, Ravi Ramamoorthi"
-bibtex:
+bibtex: cg2real.txt
 uri: cg2real.pdf
-arxiv:
+arxiv: https://arxiv.org/abs/2003.12649
 project:
 poster:
 data:
