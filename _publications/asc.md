@@ -9,7 +9,7 @@ teaser:
 thumbnail: "asc.png"
 authors: "J. C. Leon, F. Caba Heilbron, L. Mai, F. Perazzi, J.-Y. Lee, P. Arbelaez, B. Ghanem"
 bibtex:
-uri:
+uri: active-speaker_cvpr2020.pdf
 arxiv:
 project:
 poster:
