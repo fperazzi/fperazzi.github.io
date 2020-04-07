@@ -1,5 +1,5 @@
 ---
-title: "TDNet: A Temporally Distributed Network for Fast Video Segmentation"
+title: "Temporally Distributed Networks for Fast Video Segmentation"
 collection: publications
 date: 2020-12-02
 venue: CVPR
