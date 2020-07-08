@@ -19,7 +19,7 @@ I am a Research Scientist in the _Creative Intelligence Lab_, at [Adobe Research
 </ul>
 {% endif %}
 
-## Publications
+## Selected Publications
 <table>
 {% for post in site.publications reversed %}
   <tr>{% include publication.html %}</tr>
