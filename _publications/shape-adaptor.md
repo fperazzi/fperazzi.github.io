@@ -1,7 +1,7 @@
 ---
 title: "Shape Adaptor: A Learnable Resizing Module"
 collection: publications
-date: 2020-07-02
+date: 2020-08-02
 venue: ECCV
 city: Virtual
 state:

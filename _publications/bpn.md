@@ -2,7 +2,7 @@
 title: "Basis Prediction Networks for Effective Burst Denoising with Large Kernels"
 collection: publications
 permalink: /publication/bpn
-date: 2020-12-09
+date: 2020-06-09
 venue: CVPR
 city: Seattle
 state: Washington

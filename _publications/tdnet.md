@@ -1,7 +1,7 @@
 ---
 title: "Temporally Distributed Networks for Fast Video Segmentation"
 collection: publications
-date: 2020-12-02
+date: 2020-06-02
 venue: CVPR
 city: Seattle
 state: Washington

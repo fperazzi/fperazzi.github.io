@@ -1,7 +1,7 @@
 ---
 title: "Active Speakers in Context"
 collection: publications
-date: 2020-12-01
+date: 2020-06-01
 venue: CVPR
 city: Seattle
 state: Washington
