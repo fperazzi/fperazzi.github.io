@@ -9,8 +9,8 @@ teaser:
 thumbnail: "shape-adaptor.png"
 authors: "Shikun Liu, Zhe Lin, Yilin Wang, Jianming Zhang, Federico Perazzi, Edward Johns"
 bibtex:
-uri:
-arxiv:
+uri: shape-adaptor.pdf
+arxiv: https://arxiv.org/abs/2008.00892
 project:
 poster:
 data:
