@@ -1,0 +1,7 @@
+@InProceedings{Xia_2020_CVPR,
+author = {Xia, Zhihao and Perazzi, Federico and Gharbi, Michael and Sunkavalli, Kalyan and Chakrabarti, Ayan},
+title = {Basis Prediction Networks for Effective Burst Denoising With Large Kernels},
+booktitle = {The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+month = {June},
+year = {2020}
+}

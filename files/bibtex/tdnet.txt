@@ -1,0 +1,6 @@
+@article{hu2020tdnet,
+  title={Temporally Distributed Networks for Fast Video Semantic Segmentation},
+  author={Hu, Ping and Caba, Fabian and Wang, Oliver and Lin, Zhe and Sclaroff, Stan and Perazzi, Federico},
+  journal={CVPR},
+  year={2020}
+}

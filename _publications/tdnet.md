@@ -8,10 +8,10 @@ state: Washington
 teaser:
 thumbnail: "tdnet.png"
 authors: "Ping Hu, Fabian Caba Heilbron, Oliver Wang, Zhe Lin, Stan Sclaroff, Federico Perazzi"
-bibtex:
+bibtex: tdnet.txt
 uri: tdnet_cvpr2020.pdf
 arxiv: https://arxiv.org/abs/2004.01800
-project:
+project: https://cs-people.bu.edu/pinghu/TDNet.html
 poster:
 data:
 ---
