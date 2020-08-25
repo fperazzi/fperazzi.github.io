@@ -14,5 +14,6 @@ arxiv: https://arxiv.org/abs/2008.00892
 project:
 poster:
 data:
+source: https://github.com/lorenmt/shape-adaptor
 ---
 
