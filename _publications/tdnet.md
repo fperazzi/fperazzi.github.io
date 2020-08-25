@@ -12,7 +12,8 @@ bibtex: tdnet.txt
 uri: tdnet_cvpr2020.pdf
 arxiv: https://arxiv.org/abs/2004.01800
 project: https://cs-people.bu.edu/pinghu/TDNet.html
-poster:
+poster: https://cs-people.bu.edu/pinghu/TDNet_files/poster.pdf
+source: https://github.com/feinanshan/TDNet
 data:
 ---
 
