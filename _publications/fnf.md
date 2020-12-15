@@ -9,7 +9,6 @@ state:
 teaser:
 thumbnail: 'fnf.png'
 authors: "Zhihao Xia, Michael Gharbi, Federico Perazzi, Kalyan Sunkavalli, Ayan Chakrabarti"
-bibtex: bpn.txt
 uri: fnf.pdf
 arxiv: https://arxiv.org/abs/2012.05116
 project:
