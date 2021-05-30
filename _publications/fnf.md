@@ -2,8 +2,8 @@
 title: "Deep Denoising of Flash and No-Flash Pairs for Photography in Low-Light Environments"
 collection: publications
 permalink: /publication/fnf
-date: 2020-11-09
-venue: CVPR 2021
+date: 2021-06-20
+venue: CVPR
 city: Nashville
 state: TN
 teaser:

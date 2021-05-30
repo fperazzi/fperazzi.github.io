@@ -2,8 +2,8 @@
 title: "Content-Aware GAN Compression"
 collection: publications
 permalink: /publication/gancompress
-date: 2020-11-09
-venue: CVPR 2021
+date: 2021-06-19
+venue: CVPR
 city: Nashville
 state: TN
 teaser:
